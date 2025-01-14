@@ -38,7 +38,7 @@ const LandingPage = () => {
                         backgroundImage: `url(${backgroundImage})`, // Default for all screens
                     }}
                 >
-                    <div className="flex flex-col justify-center lg:bg-transparent sm:bg-lime-50 md:bg-lime-50 md:bg-white sm:w-[100%]  items-center text-center py-4 lg:items-start lg:text-left lg:bg-transparent w-[100%] h-[85vh]">
+                    <div className="flex flex-col justify-center lg:bg-transparent sm:bg-lime-50 md:bg-lime-50 sm:w-[100%]  items-center text-center py-4 lg:items-start lg:text-left lg:bg-transparent w-[100%] lg:h-full md:h-[85vh] sm:h-[85vh]">
                         <h1 className="font-sans sm:text-4xl mb-2 md:text-5xl lg:text-7xl font-bold"
                             data-aos="fade-up"
                             data-aos-anchor-placement="bottom-bottom"
