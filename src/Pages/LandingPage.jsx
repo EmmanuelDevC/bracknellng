@@ -33,12 +33,12 @@ const LandingPage = () => {
 
                 {/* Hero Section */}
                 <div
-                    className="lg:h-[85vh] bg-cover overflow-x-hidden bg-bottom bg-no-repeat bg-center lg:px-[10em] lg:py-[7rem] md:bg-none sm:bg-none"
+                    className="lg:h-[90vh] bg-cover overflow-x-hidden bg-bottom bg-no-repeat bg-center lg:px-[10em] lg:py-[7rem] md:bg-none sm:bg-none"
                     style={{
                         backgroundImage: `url(${backgroundImage})`, // Default for all screens
                     }}
                 >
-                    <div className="flex flex-col justify-center lg:bg-transparent sm:bg-lime-50 md:bg-lime-50 md:bg-white sm:w-[100%]  items-center text-center py-4 lg:items-start lg:text-left lg:bg-transparent w-[100%] h-full">
+                    <div className="flex flex-col justify-center lg:bg-transparent sm:bg-lime-50 md:bg-lime-50 md:bg-white sm:w-[100%]  items-center text-center py-4 lg:items-start lg:text-left lg:bg-transparent w-[100%] h-[85vh]">
                         <h1 className="font-sans sm:text-4xl mb-2 md:text-5xl lg:text-7xl font-bold"
                             data-aos="fade-up"
                             data-aos-anchor-placement="bottom-bottom"
