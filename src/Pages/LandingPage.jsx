@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "../Components/nav";
+import Navbar from "../Components/Nav";
 import backgroundImage from '../images/business-hero.jpeg';
 import backgroundImage2 from '../images/bg-pattern-3.png';
 import MyFont from '../images/file11.svg';
