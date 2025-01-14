@@ -17,8 +17,8 @@ const Navbar = () => {
     return (
         <>
             {/* Navbar */}
-            <nav className="bg-light-500 shadow-sm">
-                <div className="container mx-auto px-8 sm:px-1 lg:px-12 flex items-center lg:justify-around sm:justify-between h-[6rem]">
+            <nav className="bg-light-500 shadow-sm fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-opacity-50">
+                <div className="container mx-auto px-8 sm:px-1 lg:px-12 flex items-center lg:justify-between sm:justify-between h-[6rem]">
                     {/* Logo */}
                     <div className="flex items-center">
                         <img className="h-8 w-15" src={Logo} alt="Logo" />
@@ -62,7 +62,7 @@ const Navbar = () => {
                     </div>
 
                     {/* Mobile Menu Button */}
-                    <button onClick={toggleSideNav} className="lg:hidden px-3 text-white bg-lime-600 rounded">
+                    <button onClick={toggleSideNav} className="lg:hidden px-3 text-white bg-lime-600 rounded" aria-label="Toggle Menu">
                         <DragHandleIcon />
                     </button>
                 </div>
@@ -70,8 +70,8 @@ const Navbar = () => {
 
             {/* Side Nav */}
             <div
-                className={`lg:hidden fixed top-0 left-0 w-[50%] h-full bg-white shadow-md transition-transform transform ${isSideNavOpen ? 'translate-x-0' : '-translate-x-full'}`}
-
+                className={`lg:hidden fixed z-50 backdrop-blur-md bg-opacity-50 top-0 left-0 w-[50%] h-full bg-white shadow-md transition-transform transform ${isSideNavOpen ? 'translate-x-0' : '-translate-x-full'} z-60`}
+                aria-hidden={!isSideNavOpen}
             >
                 <div className="p-6 z-50">
                     <div className="flex items-center py-5 mb-3">
