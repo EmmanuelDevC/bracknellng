@@ -57,7 +57,7 @@ const LandingPage = () => {
                             </span>
                         </h1>
 
-                        <p className="font-sans sm:text-lg md:text-base lg:text-lg text-customBlueGray py-8 sm:px-4 lg:px-0"
+                        <p className="font-sans sm:text-lg md:text-base lg:text-lg text-[#191919] py-8 sm:px-4 lg:px-0"
                             data-aos="fade-up"
                             data-aos-anchor-placement="bottom-bottom"
                             data-aos-duration="1000">
@@ -273,6 +273,33 @@ const LandingPage = () => {
                     </section>
                 </div>
 
+
+                <section className="py-20 bg-white">
+                    <div className="text-center">
+                        <h2 className="text-2xl font-bold text-lime-900">
+                            Trusted by nearly 5000+ customers & startups
+                        </h2>
+                        <div className="flex items-center justify-center mt-8 space-x-8">
+                            {/* Trustpilot */}
+                            <div className="flex items-center space-x-2">
+                                <img
+                                    src="/assets/trustpilot-logo.svg"
+                                    alt="Trustpilot"
+                                    className="h-8"
+                                />
+                                <span className="text-gray-500">Trustpilot</span>
+                            </div>
+                            {/* AWS */}
+                            <img src="/assets/aws-logo.svg" alt="AWS" className="h-8" />
+                            {/* Spotify */}
+                            <img src="/assets/spotify-logo.svg" alt="Spotify" className="h-8" />
+                            {/* Monday */}
+                            <img src="/assets/monday-logo.svg" alt="Monday" className="h-8" />
+                            {/* Forbes */}
+                            <img src="/assets/forbes-logo.svg" alt="Forbes" className="h-8" />
+                        </div>
+                    </div>
+                </section>
                 <section>
                     <div className="bg-white py-16 px-6 lg:px-[10rem]">
                         <div className="max-w-4xl lg:text-left sm:text-center">
