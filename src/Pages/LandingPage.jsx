@@ -2,6 +2,11 @@ import React from "react";
 import Navbar from "../Components/Nav";
 import backgroundImage from '../images/business-hero.jpeg';
 import backgroundImage2 from '../images/bg-pattern-3.png';
+import firstImage from '../images/1.webp';
+import secondImage from '../images/2.webp';
+import thirdImage from '../images/3.webp';
+import forthImage from '../images/4.webp';
+import fifthImage from '../images/5.webp';
 import MyFont from '../images/file11.svg';
 import MyFont2 from '../images/file22.svg';
 import MyFont3 from '../images/file33.svg';
@@ -276,27 +281,21 @@ const LandingPage = () => {
 
                 <section className="py-20 bg-white">
                     <div className="text-center">
-                        <h2 className="text-2xl font-bold text-lime-900">
+                        <h2 className="text-2xl font-bold text-lime-900"
+                            data-aos="fade-up"
+                            data-aos-anchor-placement="bottom-bottom"
+                            data-aos-duration="1000"
+                        >
                             Trusted by nearly 5000+ customers & startups
                         </h2>
-                        <div className="flex items-center justify-center mt-8 space-x-8">
-                            {/* Trustpilot */}
-                            <div className="flex items-center space-x-2">
-                                <img
-                                    src="/assets/trustpilot-logo.svg"
-                                    alt="Trustpilot"
-                                    className="h-8"
-                                />
-                                <span className="text-gray-500">Trustpilot</span>
-                            </div>
-                            {/* AWS */}
-                            <img src="/assets/aws-logo.svg" alt="AWS" className="h-8" />
-                            {/* Spotify */}
-                            <img src="/assets/spotify-logo.svg" alt="Spotify" className="h-8" />
-                            {/* Monday */}
-                            <img src="/assets/monday-logo.svg" alt="Monday" className="h-8" />
-                            {/* Forbes */}
-                            <img src="/assets/forbes-logo.svg" alt="Forbes" className="h-8" />
+                        <div className="flex flex-wrap items-center justify-center mt-20 space-x-20">
+
+                            <img src={firstImage} alt="" className="lg:h-10 my-5 md:h-8 sm:h-8" />
+                            <img src={secondImage} alt="" className="lg:h-10 my-5 md:h-8 sm:h-8" />
+                            <img src={thirdImage} alt="" className="lg:h-10 my-5 md:h-8 sm:h-8" />
+                            <img src={forthImage} alt="" className="lg:h-10 my-5 md:h-8 sm:h-8" />
+                            <img src={fifthImage} alt="" className="lg:h-10 my-5 md:h-8 sm:h-8" />
+
                         </div>
                     </div>
                 </section>
