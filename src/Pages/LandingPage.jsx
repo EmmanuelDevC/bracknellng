@@ -288,7 +288,7 @@ const LandingPage = () => {
                         >
                             Trusted by nearly 5000+ customers & startups
                         </h2>
-                        <div className="flex flex-wrap items-center justify-center mt-20 space-x-20">
+                        <div className="flex flex-wrap items-center justify-center mt-20 space-x-20  sm:space-x-10">
 
                             <img src={firstImage} alt="" className="lg:h-10 my-5 md:h-8 sm:h-8" />
                             <img src={secondImage} alt="" className="lg:h-10 my-5 md:h-8 sm:h-8" />
