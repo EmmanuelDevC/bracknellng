@@ -1,6 +1,7 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import Navbar from '../Components/Nav';
 import { Link } from 'react-router-dom';
+import backgroundImage from '../images/aboutBg.png';
 import StrategyImage from '../images/business.jpg';
 import UxuiImage from '../images/ux-design.jpeg';
 import webDesignImage from '../images/web-app.jpeg';
@@ -8,14 +9,13 @@ import nftDesignImage from '../images/nft-design.jpeg';
 import healthImage from '../images/health-app.jpeg';
 import backgroundImage2 from '../images/bg-pattern-3.png/';
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import FreeBreakfastIcon from '@mui/icons-material/FreeBreakfast';
+import ArticleIcon from '@mui/icons-material/Article';
+import BrushIcon from '@mui/icons-material/Brush';
 import Footer from '../Components/Footer';
 
 const About = () => {
-    useEffect(() => {
-        AOS.init({ duration: 2200 });
-    }, []);
+
 
     return (
         <>
@@ -23,15 +23,17 @@ const About = () => {
                 <Navbar />
                 {/* Hero Section */}
                 <div
-                    className="flex flex-col h-[70vh] text-center justify-center bg-cover bg-center"
+                    className="flex flex-col lg:h-[70vh] sm:h-[50vh] text-center justify-center bg-cover bg-center"
                     style={{
-                        backgroundImage: `linear-gradient(to right, rgba(173, 250, 189, 0.5), rgba(235, 243, 255, 0.5), rgba(164, 126, 252, 0.5)), url(${backgroundImage2})`,
+                        backgroundImage: `linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(235, 243, 255, 0.5), rgba(164, 126, 252, 0.5)), url(${backgroundImage2})`,
                         backgroundBlendMode: "overlay",
                     }}
                 >
                     <h1
                         className="text-lime-900 font-sans text-4xl md:text-6xl lg:text-7xl mb-3 font-semibold"
                         data-aos="fade-down"
+                        data-aos-anchor-placement="bottom-bottom"
+                        data-aos-duration="500"
                     >
                         About Us
                     </h1>
@@ -52,11 +54,11 @@ const About = () => {
                 </div>
 
                 {/* Strategy Section */}
-                <section className="bg-white">
-                    <div className="flex flex-col lg:flex-row px-4 md:px-16  lg:px-[160px] my-10 lg:my-20">
+                <section className="bg-white py-20">
+                    <div className="flex flex-col lg:flex-row px-4 md:px-16 lg:px-[160px] lg:my-20"
+                    >
                         <div
                             className="py-8 lg:py-20  flex-1"
-                            data-aos="fade-right"
                         >
                             <h1 className="text-lime-900 text-2xl md:text-4xl font-sans py-4 font-bold">
                                 Growth strategies to be effective & competitive
@@ -73,33 +75,38 @@ const About = () => {
                         <img
                             src={StrategyImage}
                             alt="strategyImg"
-                            className="h-60 md:h-80 lg:h-[420px] shadow-lg mx-5 rounded-xl"
-                            data-aos="fade-left"
+                            className="h-60 md:h-80 sm:h-[200px] lg:h-[420px] shadow-lg mx-5 rounded-xl"
                         />
                     </div>
 
                     {/* Services Section */}
-                    <div className="text-center px-4 md:px-12 lg:px-[120px] flex flex-col items-center">
+                    <div className="text-center px-4 md:px-12 lg:px-[120px] flex flex-col items-center"
+                        style={{
+                            backgroundImage: `url(${backgroundImage})`, // Default for all screens
+                        }}
+                    >
                         <div
                             className="text-center mb-12"
-                            data-aos="fade-up"
                         >
                             <h2 className="text-xl md:text-3xl lg:text-4xl font-bold text-gray-800">
                                 As leaders in developing sustainable <br /> solutions, the future of
-                                blockchain is in our <br /> history
+                                web development is in our <br /> history
                             </h2>
                         </div>
 
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                             {/* Card 1 */}
                             <div
-                                className="bg-white rounded-lg overflow-hidden"
-                                data-aos="zoom-in"
+                                className="rounded-lg overflow-hidden"
                             >
                                 <img
                                     src={UxuiImage}
                                     alt="UX/UI Design"
-                                    className="w-full h-60 md:h-80 lg:h-[550px] rounded-3xl object-cover"
+                                    className="w-full h-60 shadow-lg md:h-80 lg:h-[400px] object-cover"
+                                    style={{
+                                        borderRadius: "50px",
+                                        boxShadow: "0 10px 16px rgba(135, 129, 129, 0.2)" // Example of a soft shadow
+                                    }}
                                 />
                                 <div className="p-4 text-left">
                                     <h3 className="text-lg font-sans text-lime-900 font-semibold">
@@ -110,14 +117,16 @@ const About = () => {
 
                             {/* Card 2 */}
                             <div
-                                className="bg-white rounded-lg overflow-hidden"
-                                data-aos="zoom-in"
-                                data-aos-delay="200"
+                                className="rounded-lg overflow-hidden"
                             >
                                 <img
                                     src={nftDesignImage}
                                     alt="NFT Market UI"
-                                    className="w-full h-60 md:h-80 lg:h-[550px] rounded-3xl object-cover"
+                                    className="w-full h-60 md:h-80 shadow-lg lg:h-[400px] object-cover"
+                                    style={{
+                                        borderRadius: "50px",
+                                        boxShadow: "0 10px 16px rgba(135, 129, 129, 0.2)" // Example of a soft shadow
+                                    }}
                                 />
                                 <div className="p-4 text-left">
                                     <h3 className="text-lg font-sans text-lime-900 font-semibold">
@@ -128,14 +137,16 @@ const About = () => {
 
                             {/* Card 3 */}
                             <div
-                                className="bg-white rounded-lg overflow-hidden"
-                                data-aos="zoom-in"
-                                data-aos-delay="400"
+                                className="b rounded-lg overflow-hidden"
                             >
                                 <img
                                     src={healthImage}
                                     alt="Wallet App Development"
-                                    className="w-full h-60 md:h-80 lg:h-[550px] rounded-3xl object-cover"
+                                    className="w-full h-60 md:h-80 shadow-lg lg:h-[400px] object-cover"
+                                    style={{
+                                        borderRadius: "50px",
+                                        boxShadow: "0 10px 16px rgba(135, 129, 129, 0.2)" // Example of a soft shadow
+                                    }}
                                 />
                                 <div className="p-4 text-left">
                                     <h3 className="text-lg font-sans text-lime-900 font-semibold">
@@ -146,20 +157,94 @@ const About = () => {
 
                             {/* Card 4 */}
                             <div
-                                className="bg-white rounded-lg overflow-hidden"
-                                data-aos="zoom-in"
-                                data-aos-delay="600"
+                                className=" rounded-lg overflow-hidden"
                             >
                                 <img
                                     src={webDesignImage}
                                     alt="Health Mobile App"
-                                    className="w-full h-60 md:h-80 lg:h-[550px] rounded-3xl object-cover"
+                                    className="w-full h-60 md:h-80 shadow-lg lg:h-[400px] object-cover"
+                                    style={{
+                                        borderRadius: "50px",
+                                        boxShadow: "0 10px 16px rgba(135, 129, 129, 0.2)" // Example of a soft shadow
+                                    }}
                                 />
                                 <div className="p-4 text-left">
                                     <h3 className="text-lg font-sans text-lime-900 font-semibold">
                                         Mobile Apps
                                     </h3>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section className='bg-blue-50 '
+                    style={{
+                        backgroundImage: `url(${backgroundImage})`, // Default for all screens
+                    }}
+                >
+                    <div className='flex text-left lg:p-10 sm:px-6 lg:mx-20 py-20 flex flex-col'>
+                        <div>
+                            <h1 className='text-lime-900 lg:text-5xl md:text-4xl sm:text-3xl lg:py-5 sm:py-5 font-bold'>
+                                Bespoke software development solutions
+                            </h1>
+                            <div className='flex flex-wrap justify-between'>
+                                <p className='text-gray-500 lg:text-lg md:text-lg sm:text-md'>
+                                    We support companies that need agile teams of the best engineers. <br /> Build or extend your software development team with ease.
+                                </p>
+
+                                <button className='py-4 px-6 sm:my-5 rounded-md bg-lime-900 text-white font-sans hover:bg-lime-700'>
+                                    Visit All
+                                </button>
+                            </div>
+                        </div>
+
+                        <div className='lg:mt-20 sm:mt-3 flex flex-wrap justify-around'>
+                            <div className='lg:h-[350px]  sm:h-[full] lg:p-10 sm:p-6  my-5 bg-white w-[380px]'
+                                style={{
+                                    borderRadius: "50px",
+                                    boxShadow: "0 10px 16px rgba(179, 178, 178, 0.2)" // Example of a soft shadow
+                                }}
+
+                            >
+
+                                <div className="h-[70px] w-[70px] justify-center my-2 items-center flex rounded-full bg-green-100">
+                                    <FreeBreakfastIcon className='text-lime-900' />
+                                </div>
+                                <h3 className='text-xl font-bold py-5 text-lime-900'>Research and Development</h3>
+                                <p className='text-gray-500 text-lg'>A workshop to answer critical questions, plan the features of your product and reduce the risk.</p>
+                                <button className='text-gray-500 py-5 text-lg'>
+                                    Learn More
+                                </button>
+                            </div>
+                            <div className='lg:h-[350px] sm:h-[full] lg:p-10 sm:p-6 my-5 bg-white w-[380px] '
+                                style={{
+                                    borderRadius: "50px",
+                                    boxShadow: "0 10px 16px rgba(184, 184, 184, 0.2)" // Example of a soft shadow
+                                }}
+                            >
+                                <div className="h-[70px] w-[70px] justify-center my-2 items-center flex rounded-full bg-green-100">
+                                    <BrushIcon className='text-lime-900' />
+                                </div>                                <h3 className='text-xl font-bold py-5 text-lime-900'>Product Design Sprint</h3>
+                                <p className='text-gray-500 text-lg'>A workshop to answer critical questions, plan the features of your product and reduce the risk.</p>
+                                <button className='text-gray-500 py-5 text-lg'>
+                                    Learn More
+                                </button>
+                            </div>
+                            <div className='lg:h-[350px] sm:h-[full] lg:p-10 sm:p-6 my-5 bg-white w-[380px]'
+                                style={{
+                                    borderRadius: "50px",
+                                    boxShadow: "0 10px 16px rgba(188, 188, 188, 0.2)" // Example of a soft shadow
+                                }}
+
+                            >
+                                <div className="h-[70px] w-[70px] justify-center my-2 items-center flex rounded-full bg-green-100">
+                                    <ArticleIcon className='text-lime-900' />
+                                </div>                                <h3 className='text-xl font-bold py-5 text-lime-900'>Scoping session</h3>
+                                <p className='text-gray-500 text-lg'>A workshop to answer critical questions, plan the features of your product and reduce the risk.</p>
+                                <button className='text-gray-500 py-5 text-lg'>
+                                    Learn More
+                                </button>
                             </div>
                         </div>
                     </div>
