@@ -32,7 +32,6 @@ const LandingPage = () => {
         window.scrollTo({ top: 0, behavior: "smooth" });
     };
     return (
-        <>
             <div>
                 <Navbar />
 
@@ -347,7 +346,6 @@ const LandingPage = () => {
                 </button>
                 <Footer />
             </div >
-        </>
     );
 };
 

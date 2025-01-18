@@ -117,9 +117,6 @@ const About = () => {
                             {/* Card 1 */}
                             <div
                                 className="rounded-lg overflow-hidden"
-                                data-aos="fade-right"
-                                data-aos-anchor-placement="bottom-bottom"
-                                data-aos-duration="500"
                             >
                                 <img
                                     src={UxuiImage}

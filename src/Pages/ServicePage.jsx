@@ -1,5 +1,8 @@
 import React from "react";
 import Navbar from "../Components/Nav";
+import MyFont from '../images/file11.svg';
+import MyFont2 from '../images/file22.svg';
+import MyFont3 from '../images/file33.svg';
 import backgroundImage from '../images/aboutBg.png';
 import backgroundImage2 from '../images/bg-pattern-3.png';
 import webAppImage from '../images/web-app.jpg';
@@ -29,8 +32,8 @@ const Service = () => {
     };
     return (
         <>
+            <Navbar />
             <div>
-                <Navbar />
                 {/* Hero Section */}
                 <div
                     className="flex flex-col lg:h-[70vh] sm:h-[50vh] text-center justify-center bg-cover bg-center"
@@ -63,11 +66,58 @@ const Service = () => {
                     </ul>
                 </div>
 
-                <section className=" lg:px-40 sm:px-5 bg-blue-50"
+                <section className=" lg:px-40 text-center bg-white py-20 sm:px-5 bg-blue-50"
                     style={{
                         backgroundImage: `url(${backgroundImage})`, // Default for all screens
                     }}
                 >
+                    <h1 className="text-3xl font-sans my-5 md:text-4xl lg:text-4xl text-lime-900 font-bold mb-10">We offer you the best service🚀</h1>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 py-5 justify-items-center">
+
+                        <div className="flex flex-col w-[90%] sm:w-screen md:w-[auto] sm:px-4 max-w-sm text-left"
+                            data-aos="fade-up"
+                            data-aos-duration="700"
+                        >
+                            <img className="h-12 w-12 mb-4" src={MyFont} alt="Icon" />
+                            <h2 className="font-bold text-lime-800 font-sans text-lg lg:text-xl sm:text-lg mb-2">Design-led digital transformation</h2>
+                            <p className="font-sans text-customBlueGray mb-4">
+                                We combine business opportunities with customer expectations to design, transform, and deliver useful products and unique brand experiences.
+                            </p>
+                            <button className="text-customBlueGray text-lg font-medium hover:text-lime-600">
+                                Learn More
+                            </button>
+                        </div>
+
+                        <div className="flex flex-col w-[90%] sm:w-screen md:w-[auto] sm:px-4 max-w-sm text-left"
+                            data-aos="fade-up"
+                            data-aos-duration="1000"
+                        >
+                            <img className="h-12 w-12 mb-4" src={MyFont2} alt="Icon" />
+                            <h2 className="font-bold text-lime-800 font-sans text-lg lg:text-xl sm:text-lg mb-2">Tansition to sustainable futures</h2>
+                            <p className="font-sans text-customBlueGray mb-4">
+                                We combine business opportunities with customer expectations to design, transform, and deliver useful products and unique brand experiences.
+                            </p>
+                            <button className="text-customBlueGray text-lg font-medium hover:text-lime-600">
+                                Learn More
+                            </button>
+                        </div>
+
+                        <div className="flex flex-col w-[90%] sm:w-screen md:w-[auto] sm:px-4 max-w-sm text-left"
+                            data-aos="fade-up"
+                            data-aos-duration="1200"
+                        >
+                            <img className="h-12 w-12 mb-4" src={MyFont3} alt="Icon" />
+                            <h2 className="font-bold text-lime-800 font-sans text-lg lg:text-xl sm:text-lg mb-2">We empower our partners</h2>
+                            <p className="font-sans text-customBlueGray mb-4">
+                                We combine business opportunities with customer expectations to design, transform, and deliver useful products and unique brand experiences.
+                            </p>
+                            <button className="text-customBlueGray text-lg font-medium hover:text-lime-600">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+
                     <div className=" flex flex-col justify-center text-center">
 
                         <h1 className="text-lime-900 font-semibold py-20 font-sans  font-bold text-2xl lg:text-4xl md:text-4xl">
@@ -81,7 +131,7 @@ const Service = () => {
                                     boxShadow: "0 10px 16px rgba(188, 188, 188, 0.2)" // Example of a soft shadow
                                 }}
                                 data-aos="fade-up"
-                                data-aos-duration="700"
+                                data-aos-duration="400"
                             >
 
                                 <div className="w-full h-64 ">
@@ -107,7 +157,7 @@ const Service = () => {
                                     boxShadow: "0 10px 16px rgba(188, 188, 188, 0.2)" // Example of a soft shadow
                                 }}
                                 data-aos="fade-up"
-                                data-aos-duration="700"
+                                data-aos-duration="500"
                             >
 
                                 <div className="w-full h-64 ">
@@ -159,7 +209,7 @@ const Service = () => {
                                     boxShadow: "0 10px 16px rgba(188, 188, 188, 0.2)" // Example of a soft shadow
                                 }}
                                 data-aos="fade-up"
-                                data-aos-duration="700"
+                                data-aos-duration="400"
                             >
 
                                 <div className="w-full h-64 ">
@@ -185,7 +235,7 @@ const Service = () => {
                                     boxShadow: "0 10px 16px rgba(188, 188, 188, 0.2)" // Example of a soft shadow
                                 }}
                                 data-aos="fade-up"
-                                data-aos-duration="700"
+                                data-aos-duration="500"
                             >
 
                                 <div className="w-full h-64 ">
