@@ -78,13 +78,15 @@ const About = () => {
                                 human-centered enterprise software that has the polished, snappy
                                 feel of the best consumer apps.
                             </p>
-                            <button className="py-3 md:py-4 mt-4 px-5 text-sm md:text-lg font-sans rounded-md bg-lime-800 text-white hover:bg-lime-700"
-                                data-aos="fade-up"
-                                data-aos-anchor-placement="bottom-bottom"
-                                data-aos-duration="1200"
-                            >
-                                Our Services
-                            </button>
+                            <a href="/Service">
+                                <button className="py-3 md:py-4 mt-4 px-5 text-sm md:text-lg font-sans rounded-md bg-lime-800 text-white hover:bg-lime-700"
+                                    data-aos="fade-up"
+                                    data-aos-anchor-placement="bottom-bottom"
+                                    data-aos-duration="1200"
+                                >
+                                    Our Services
+                                </button>
+                            </a>
                         </div>
                         <img
                             src={StrategyImage}
@@ -213,9 +215,11 @@ const About = () => {
                                     We support companies that need agile teams of the best engineers. <br /> Build or extend your software development team with ease.
                                 </p>
 
-                                <button className='py-4 px-6 sm:my-5 rounded-md bg-lime-900 text-white font-sans hover:bg-lime-700'>
-                                    Visit All
-                                </button>
+                                <a href="/Service">
+                                    <button className='py-4 px-6 sm:my-5 rounded-md bg-lime-900 text-white font-sans hover:bg-lime-700'>
+                                        Visit All
+                                    </button>
+                                </a>
                             </div>
                         </div>
 

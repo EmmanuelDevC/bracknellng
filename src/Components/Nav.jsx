@@ -44,9 +44,11 @@ const Navbar = () => {
 
                     {/* Icons & CTA */}
                     <div className="flex items-center space-x-4">
-                        <button className="bg-lime-600 font-sans font-medium text-white px-4 py-2 hidden lg:block rounded-md hover:bg-black">
+                       <a href="/Contact">
+                       <button className="bg-black border border-white font-sans font-medium transition-color duration-300 text-white px-4 py-2 hidden lg:block rounded-md hover:bg-white hover:text-black">
                             Get In Touch
                         </button>
+                       </a>
                     </div>
 
                     {/* Mobile Menu Button */}
@@ -81,7 +83,7 @@ const Navbar = () => {
                         Contact Us
                     </Link>
                     <br />
-                    <button className="bg-lime-600 font-sans font-medium text-white px-4 py-2 rounded-md hover:bg-lime-800">
+                    <button className="bg-black border border-white rounded-full font-sans font-medium text-white px-4 py-2  hover:bg-white hover:text-black transition-color duration-300">
                         Get Started
                     </button>
                 </div>

@@ -84,9 +84,7 @@ const Service = () => {
                             <p className="font-sans text-customBlueGray mb-4">
                                 We combine business opportunities with customer expectations to design, transform, and deliver useful products and unique brand experiences.
                             </p>
-                            <button className="text-customBlueGray text-lg font-medium hover:text-lime-600">
-                                Learn More
-                            </button>
+
                         </div>
 
                         <div className="flex flex-col w-[90%] sm:w-screen md:w-[auto] sm:px-4 max-w-sm text-left"
@@ -98,9 +96,7 @@ const Service = () => {
                             <p className="font-sans text-customBlueGray mb-4">
                                 We combine business opportunities with customer expectations to design, transform, and deliver useful products and unique brand experiences.
                             </p>
-                            <button className="text-customBlueGray text-lg font-medium hover:text-lime-600">
-                                Learn More
-                            </button>
+
                         </div>
 
                         <div className="flex flex-col w-[90%] sm:w-screen md:w-[auto] sm:px-4 max-w-sm text-left"
@@ -112,13 +108,11 @@ const Service = () => {
                             <p className="font-sans text-customBlueGray mb-4">
                                 We combine business opportunities with customer expectations to design, transform, and deliver useful products and unique brand experiences.
                             </p>
-                            <button className="text-customBlueGray text-lg font-medium hover:text-lime-600">
-                                Learn More
-                            </button>
+
                         </div>
                     </div>
 
-                    <hr  className="my-10 text-green-500"/>
+                    <hr className="my-10 text-green-500" />
 
                     <div className=" flex flex-col justify-center text-center">
 
@@ -148,9 +142,11 @@ const Service = () => {
                                     <p className="text-md font-sans text-customBlueGray pb-5 rounded-md">
                                         Together we transform your business from the people to the processes.
                                     </p>
-                                    <button className="py-4 px-6 w-40 transition-color duration-300 ease-in-out hover:bg-lime-800 rounded-md text-lime-800 hover:text-white border border-lime-600">
-                                        Contact Us
-                                    </button>
+                                    <a href='/Contact'>
+                                        <button className="py-4 px-6 w-40 transition-color duration-300 ease-in-out hover:bg-lime-800 rounded-md text-lime-800 hover:text-white border border-lime-600">
+                                            Contact Us
+                                        </button>
+                                    </a>
                                 </div>
                             </div>
                             <div className="h-fit border text-left w-full rounded-xl overflow-hidden max-w-sm"
@@ -174,9 +170,11 @@ const Service = () => {
                                     <p className="text-md font-sans text-customBlueGray pb-5 rounded-md">
                                         Together we transform your business from the people to the processes.
                                     </p>
-                                    <button className="py-4 px-6 w-40 transition-color duration-300 ease-in-out hover:bg-lime-800 rounded-md text-lime-800 hover:text-white border border-lime-600">
-                                        Contact Us
-                                    </button>
+                                    <a href='/Contact'>
+                                        <button className="py-4 px-6 w-40 transition-color duration-300 ease-in-out hover:bg-lime-800 rounded-md text-lime-800 hover:text-white border border-lime-600">
+                                            Contact Us
+                                        </button>
+                                    </a>
                                 </div>
                             </div>
                             <div className="h-fit border text-left w-full rounded-xl overflow-hidden max-w-sm"
@@ -200,9 +198,11 @@ const Service = () => {
                                     <p className="text-md font-sans text-customBlueGray pb-5 rounded-md">
                                         Together we transform your business from the people to the processes.
                                     </p>
-                                    <button className="py-4 px-6 w-40 transition-color duration-300 ease-in-out hover:bg-lime-800 rounded-md text-lime-800 hover:text-white border border-lime-600">
-                                        Contact Us
-                                    </button>
+                                    <a href='/Contact'>
+                                        <button className="py-4 px-6 w-40 transition-color duration-300 ease-in-out hover:bg-lime-800 rounded-md text-lime-800 hover:text-white border border-lime-600">
+                                            Contact Us
+                                        </button>
+                                    </a>
                                 </div>
                             </div>
                             <div className="h-fit border text-left w-full rounded-xl overflow-hidden max-w-sm"
@@ -226,9 +226,11 @@ const Service = () => {
                                     <p className="text-md font-sans text-customBlueGray pb-5 rounded-md">
                                         Together we transform your business from the people to the processes.
                                     </p>
-                                    <button className="py-4 px-6 w-40 transition-color duration-300 ease-in-out hover:bg-lime-800 rounded-md text-lime-800 hover:text-white border border-lime-600">
-                                        Contact Us
-                                    </button>
+                                    <a href='/Contact'>
+                                        <button className="py-4 px-6 w-40 transition-color duration-300 ease-in-out hover:bg-lime-800 rounded-md text-lime-800 hover:text-white border border-lime-600">
+                                            Contact Us
+                                        </button>
+                                    </a>
                                 </div>
                             </div>
                             <div className="h-fit border text-left w-full rounded-xl overflow-hidden max-w-sm"
@@ -252,9 +254,11 @@ const Service = () => {
                                     <p className="text-md font-sans text-customBlueGray pb-5 rounded-md">
                                         Together we transform your business from the people to the processes.
                                     </p>
-                                    <button className="py-4 px-6 w-40 transition-color duration-300 ease-in-out hover:bg-lime-800 rounded-md text-lime-800 hover:text-white border border-lime-600">
-                                        Contact Us
-                                    </button>
+                                    <a href='/Contact'>
+                                        <button className="py-4 px-6 w-40 transition-color duration-300 ease-in-out hover:bg-lime-800 rounded-md text-lime-800 hover:text-white border border-lime-600">
+                                            Contact Us
+                                        </button>
+                                    </a>
                                 </div>
                             </div>
                             <div className="h-fit border text-left w-full rounded-xl overflow-hidden max-w-sm"
@@ -278,9 +282,11 @@ const Service = () => {
                                     <p className="text-md font-sans text-customBlueGray pb-5 rounded-md">
                                         Together we transform your business from the people to the processes.
                                     </p>
-                                    <button className="py-4 px-6 w-40 transition-color duration-300 ease-in-out hover:bg-lime-800 rounded-md text-lime-800 hover:text-white border border-lime-600">
-                                        Contact Us
-                                    </button>
+                                    <a href='/Contact'>
+                                        <button className="py-4 px-6 w-40 transition-color duration-300 ease-in-out hover:bg-lime-800 rounded-md text-lime-800 hover:text-white border border-lime-600">
+                                            Contact Us
+                                        </button>
+                                    </a>
                                 </div>
                             </div>
 
