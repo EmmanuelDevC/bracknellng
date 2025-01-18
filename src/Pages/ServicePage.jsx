@@ -80,6 +80,8 @@ const Service = () => {
                                     borderRadius: "50px",
                                     boxShadow: "0 10px 16px rgba(188, 188, 188, 0.2)" // Example of a soft shadow
                                 }}
+                                data-aos="fade-up"
+                                data-aos-duration="700"
                             >
 
                                 <div className="w-full h-64 ">
@@ -104,6 +106,8 @@ const Service = () => {
                                     borderRadius: "50px",
                                     boxShadow: "0 10px 16px rgba(188, 188, 188, 0.2)" // Example of a soft shadow
                                 }}
+                                data-aos="fade-up"
+                                data-aos-duration="700"
                             >
 
                                 <div className="w-full h-64 ">
@@ -128,6 +132,8 @@ const Service = () => {
                                     borderRadius: "50px",
                                     boxShadow: "0 10px 16px rgba(188, 188, 188, 0.2)" // Example of a soft shadow
                                 }}
+                                data-aos="fade-up"
+                                data-aos-duration="700"
                             >
 
                                 <div className="w-full h-64 ">
@@ -152,6 +158,8 @@ const Service = () => {
                                     borderRadius: "50px",
                                     boxShadow: "0 10px 16px rgba(188, 188, 188, 0.2)" // Example of a soft shadow
                                 }}
+                                data-aos="fade-up"
+                                data-aos-duration="700"
                             >
 
                                 <div className="w-full h-64 ">
@@ -176,6 +184,8 @@ const Service = () => {
                                     borderRadius: "50px",
                                     boxShadow: "0 10px 16px rgba(188, 188, 188, 0.2)" // Example of a soft shadow
                                 }}
+                                data-aos="fade-up"
+                                data-aos-duration="700"
                             >
 
                                 <div className="w-full h-64 ">
@@ -200,6 +210,8 @@ const Service = () => {
                                     borderRadius: "50px",
                                     boxShadow: "0 10px 16px rgba(188, 188, 188, 0.2)" // Example of a soft shadow
                                 }}
+                                data-aos="fade-up"
+                                data-aos-duration="700"
                             >
 
                                 <div className="w-full h-64 ">
