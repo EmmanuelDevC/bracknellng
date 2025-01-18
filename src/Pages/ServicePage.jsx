@@ -118,6 +118,8 @@ const Service = () => {
                         </div>
                     </div>
 
+                    <hr  className="my-10 text-green-500"/>
+
                     <div className=" flex flex-col justify-center text-center">
 
                         <h1 className="text-lime-900 font-semibold py-20 font-sans  font-bold text-2xl lg:text-4xl md:text-4xl">
