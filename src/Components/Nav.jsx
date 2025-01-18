@@ -58,31 +58,30 @@ const Navbar = () => {
 
             {/* Side Nav */}
             <div
-                className={`lg:hidden fixed z-50 top-0 left-0 w-[50%] h-full bg-[#191919] shadow-md transition-transform transform ${isSideNavOpen ? 'translate-x-0' : '-translate-x-full'} z-60`}
+                className={`lg:hidden fixed z-50 top-0 left-0 w-[100%] h-full bg-[#191919] shadow-md transition-transform transform ${isSideNavOpen ? 'translate-x-0' : '-translate-x-full'} z-60`}
                 aria-hidden={!isSideNavOpen}
             >
-                <div className="p-6 z-50">
-                    <div className="flex items-center py-5 mb-3">
+                <div className="flex flex-col h-full justify-between oy-auto text-center p-6 z-50">
+                    <div className="flex justify-between items-center py-5 mb-3">
                         <img className="h-8 w-15" src={Logo} alt="Logo" />
+                        <button onClick={toggleSideNav} className="lg:hidden px-5 text-white bg-lime-600 rounded" aria-label="Toggle Menu">
+                            x
+                        </button>
                     </div>
-                    <hr />
-                    <Link to="/" className="block px-4 py-2 text-white font-medium font-sans hover:text-lime-600">
+                    <Link to="/" className="block px-4 py-2 text-white font-medium font-sans rounded-lg hover:bg-lime-800">
                         Home
                     </Link>
-                    <Link to="/about" className="block px-4 py-2 text-white font-medium font-sans hover:text-lime-600">
+                    <Link to="/about" className="block px-4 py-2 text-white font-medium font-sans rounded-lg hover:bg-lime-800">
                         About Us
                     </Link>
-                    <Link to="/features" className="block px-4 py-2 text-white font-medium font-sans hover:text-lime-600">
-                        Features
+                    <Link to="/service" className="block px-4 py-2 text-white font-medium font-sans rounded-lg hover:bg-lime-800">
+                        Services
                     </Link>
-                    <Link to="/blog" className="block px-4 py-2 text-white font-medium font-sans hover:text-lime-600">
-                        Blog
-                    </Link>
-                    <Link to="/contact" className="block px-4 py-2 text-white font-medium font-sans hover:text-purple-800">
-                        Contact
+                    <Link to="/contact" className="block px-4 py-2 text-white font-medium font-sans rounded-lg hover:bg-lime-800">
+                        Contact Us
                     </Link>
                     <br />
-                    <button className="bg-lime-600 font-sans font-medium text-white px-4 py-2 rounded-md hover:bg-black">
+                    <button className="bg-lime-600 font-sans font-medium text-white px-4 py-2 rounded-md hover:bg-lime-800">
                         Get Started
                     </button>
                 </div>
