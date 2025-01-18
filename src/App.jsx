@@ -5,6 +5,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import LandingPage from './Pages/LandingPage.jsx';
 import About from './Pages/AboutPage.jsx';
 import Nopage from './Pages/Nopage.jsx';
+import Service from './Pages/ServicePage.jsx';
+import ContactUs from './Pages/ContactusPage.jsx';
 
 function App() {
   useEffect(() => {
@@ -22,7 +24,9 @@ function App() {
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/About" element={<About />} />
-          <Route path="*" element={<Nopage />} />
+          <Route path="/Service" element={<Service />} />
+          <Route path="/Contact" element={<ContactUs/>} />
+          <Route path=" * " element={<Nopage />} />
         </Routes>
       </Router>
     </>

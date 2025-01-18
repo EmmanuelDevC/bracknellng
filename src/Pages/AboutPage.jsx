@@ -226,14 +226,14 @@ const About = () => {
 
 
 
-                            <div className='lg:h-[350px] sm:h-[full] lg:p-10 sm:p-6 sm:justify-center sm:item-center sm:text-center my-5 bg-white w-[380px] '
+                            <div className='lg:h-[350px]  sm:h-[full] lg:p-10 sm:p-6 sm:justify-center sm:item-center lg:text-left sm:text-center my-5 bg-white w-[380px] '
                                 style={{
                                     borderRadius: "50px",
                                     boxShadow: "0 10px 16px rgba(184, 184, 184, 0.2)" // Example of a soft shadow
                                 }}
 
                             >
-                                <div className="h-[70px] w-[70px] justify-center my-2 items-center flex sm:mx-auto rounded-full bg-green-100">
+                                <div className="h-[70px] w-[70px] justify-center my-2 items-center flex lg:mx-0 sm:mx-auto rounded-full bg-green-100">
                                     <FreeBreakfastIcon className='text-lime-900' />
                                 </div>                                <h3 className='text-xl font-bold py-5 text-lime-900'>Research and Development</h3>
                                 <p className='text-gray-500 text-lg'>A workshop to answer critical questions, plan the features of your product and reduce the risk.</p>
@@ -242,14 +242,14 @@ const About = () => {
                                 </button>
                             </div>
 
-                            <div className='lg:h-[350px] sm:h-[full] lg:p-10 sm:p-6 sm:justify-center sm:item-center sm:text-center my-5 bg-white w-[380px] '
+                            <div className='lg:h-[350px]  sm:h-[full] lg:p-10 sm:p-6 sm:justify-center sm:item-center lg:text-left sm:text-center my-5 bg-white w-[380px] '
                                 style={{
                                     borderRadius: "50px",
                                     boxShadow: "0 10px 16px rgba(184, 184, 184, 0.2)" // Example of a soft shadow
                                 }}
 
                             >
-                                <div className="h-[70px] w-[70px] justify-center my-2 items-center flex sm:mx-auto rounded-full bg-green-100">
+                                <div className="h-[70px] w-[70px] justify-center my-2 items-center flex lg:mx-0 sm:mx-auto rounded-full bg-green-100">
                                     <BrushIcon className='text-lime-900' />
                                 </div>                                <h3 className='text-xl font-bold py-5 text-lime-900'>Product Design Sprint</h3>
                                 <p className='text-gray-500 text-lg'>A workshop to answer critical questions, plan the features of your product and reduce the risk.</p>
@@ -259,14 +259,14 @@ const About = () => {
                             </div>
 
 
-                            <div className='lg:h-[350px] sm:h-[full] lg:p-10 sm:p-6 my-5 sm:justify-center sm:item-center sm:text-center bg-white w-[380px]'
+                            <div className='lg:h-[350px]  sm:h-[full] lg:p-10 sm:p-6 my-5 sm:justify-center lg:text-left sm:item-center sm:text-center bg-white w-[380px]'
                                 style={{
                                     borderRadius: "50px",
                                     boxShadow: "0 10px 16px rgba(188, 188, 188, 0.2)" // Example of a soft shadow
                                 }}
 
                             >
-                                <div className="h-[70px] w-[70px] justify-center my-2 sm:mx-auto items-center flex rounded-full bg-green-100">
+                                <div className="h-[70px] w-[70px] justify-center my-2 lg:mx-0 sm:mx-auto items-center flex rounded-full bg-green-100">
                                     <ArticleIcon className='text-lime-900' />
                                 </div>                                <h3 className='text-xl font-bold py-5 text-lime-900'>Scoping session</h3>
                                 <p className='text-gray-500 text-lg'>A workshop to answer critical questions, plan the features of your product and reduce the risk.</p>

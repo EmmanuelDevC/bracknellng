@@ -34,7 +34,7 @@ const Navbar = () => {
                             About Us
                         </Link>
 
-                        <Link to="/Services" className="text-white text-sm transition-colors duration-300 ease-in-out px-5 py-2 rounded-full font-md font-sans focus:bg-white hover:bg-white hover:text-lime-700">
+                        <Link to="/Service" className="text-white text-sm transition-colors duration-300 ease-in-out px-5 py-2 rounded-full font-md font-sans focus:bg-white hover:bg-white hover:text-lime-700">
                             Services
                         </Link>
                         <Link to="/contact" className="text-white text-sm transition-colors duration-300 ease-in-out px-5 py-2 rounded-full font-md font-sans focus:bg-white hover:bg-white hover:text-lime-700">

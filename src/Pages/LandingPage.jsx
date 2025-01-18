@@ -13,15 +13,15 @@ import MyFont3 from '../images/file33.svg';
 import PhoneImage from '../images/phoneImg.webp';
 import boxImage from '../images/img-box.png';
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
-import FlagIcon from '@mui/icons-material/Flag';
+import FlagIcon from '@mui/icons-material/Flag';       
 import TrendingUpIcon from '@mui/icons-material/TrendingUp';
 import WorkOutlineIcon from '@mui/icons-material/WorkOutline';
-import Footer from "../Components/Footer";
+import Footer from "../Components/Footer";                                      
 
 const LandingPage = () => {
     const faqs = [
         "What do I need to know before contacting you?",
-        "Do you have any reviews from satisfied customers?",
+        "Do you have any reviews from satisfied customers?",                             
         "How much time will it take for you to make my app?",
         "How do you guarantee product quality?",
         "Should I create a mobile or a web app?",
