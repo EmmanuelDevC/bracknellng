@@ -74,9 +74,7 @@ const About = () => {
                                 data-aos-anchor-placement="bottom-bottom"
                                 data-aos-duration="1000"
                             >
-                                Everything we do and dream up has a solid design impact. We create
-                                human-centered enterprise software that has the polished, snappy
-                                feel of the best consumer apps.
+                                <b>Bracknell Technologies Limited</b> is an innovative Nigerian based Technology Solutions Provider offering state-of-art Business Process Automation, Enterprise Web Applications, Computer Networking, Digital Marketing Strategies, Managed Services, and General Computer Hardware Services.
                             </p>
                             <Link to="/Service">
                                 <button className="py-3 md:py-4 mt-4 px-5 text-sm md:text-lg font-sans rounded-md bg-lime-800 text-white hover:bg-lime-700"
@@ -227,7 +225,7 @@ const About = () => {
 
 
 
-                            <div className='lg:h-[350px]  sm:h-[full] lg:p-10 sm:p-6 sm:justify-center sm:item-center lg:text-left sm:text-center my-5 bg-white w-[380px] '
+                            <div className='lg:h-[350px]  sm:h-[full] lg:py-6 lg:px-10 sm:p-6 sm:justify-center sm:item-center lg:text-left sm:text-center my-5 bg-white w-[380px] '
                                 style={{
                                     borderRadius: "50px",
                                     boxShadow: "0 10px 16px rgba(184, 184, 184, 0.2)" // Example of a soft shadow
@@ -236,14 +234,14 @@ const About = () => {
                             >
                                 <div className="h-[70px] w-[70px] justify-center my-2 items-center flex lg:mx-0 sm:mx-auto rounded-full bg-green-100">
                                     <FreeBreakfastIcon className='text-lime-900' />
-                                </div>                                <h3 className='text-xl font-bold py-5 text-lime-900'>Research and Development</h3>
-                                <p className='text-gray-500 text-lg'>A workshop to answer critical questions, plan the features of your product and reduce the risk.</p>
+                                </div>
+                                <h3 className='text-xl font-bold py-5 text-lime-900'>Enterprise Business Solutions</h3>
+                                <p className='text-gray-500 text-md'>Our Enterprise Business Solutions cut across sectors like: Finance, Oil & Gas, Real Estates, Health, Education, and other government parastatals.</p>
                                 <button className='text-gray-500 py-5 text-lg'>
                                     Learn More
                                 </button>
                             </div>
-
-                            <div className='lg:h-[350px]  sm:h-[full] lg:p-10 sm:p-6 sm:justify-center sm:item-center lg:text-left sm:text-center my-5 bg-white w-[380px] '
+                            <div className='lg:h-[350px]  sm:h-[full] lg:py-6 lg:px-10 sm:p-6 sm:justify-center sm:item-center lg:text-left sm:text-center my-5 bg-white w-[380px] '
                                 style={{
                                     borderRadius: "50px",
                                     boxShadow: "0 10px 16px rgba(184, 184, 184, 0.2)" // Example of a soft shadow
@@ -252,29 +250,33 @@ const About = () => {
                             >
                                 <div className="h-[70px] w-[70px] justify-center my-2 items-center flex lg:mx-0 sm:mx-auto rounded-full bg-green-100">
                                     <BrushIcon className='text-lime-900' />
-                                </div>                                <h3 className='text-xl font-bold py-5 text-lime-900'>Product Design Sprint</h3>
-                                <p className='text-gray-500 text-lg'>A workshop to answer critical questions, plan the features of your product and reduce the risk.</p>
+                                </div>
+                                <h3 className='text-xl font-bold py-5 text-lime-900'>Web Design & Development</h3>
+                                <p className='text-gray-500 text-md'>We design and develop aesthetic and responsive websites for all manner of businesses (E-Commerce, Corporate webportals, & Collaborations).
+
+                                </p>
                                 <button className='text-gray-500 py-5 text-lg'>
                                     Learn More
                                 </button>
                             </div>
-
-
-                            <div className='lg:h-[350px]  sm:h-[full] lg:p-10 sm:p-6 my-5 sm:justify-center lg:text-left sm:item-center sm:text-center bg-white w-[380px]'
+                            <div className='lg:h-[full]  sm:h-[full] lg:py-6 lg:px-10 sm:p-6 sm:justify-center sm:item-center lg:text-left sm:text-center my-5 bg-white w-[380px] '
                                 style={{
                                     borderRadius: "50px",
-                                    boxShadow: "0 10px 16px rgba(188, 188, 188, 0.2)" // Example of a soft shadow
+                                    boxShadow: "0 10px 16px rgba(184, 184, 184, 0.2)" // Example of a soft shadow
                                 }}
 
                             >
-                                <div className="h-[70px] w-[70px] justify-center my-2 lg:mx-0 sm:mx-auto items-center flex rounded-full bg-green-100">
+                                <div className="h-[70px] w-[70px] justify-center my-2 items-center flex lg:mx-0 sm:mx-auto rounded-full bg-green-100">
                                     <ArticleIcon className='text-lime-900' />
-                                </div>                                <h3 className='text-xl font-bold py-5 text-lime-900'>Scoping session</h3>
-                                <p className='text-gray-500 text-lg'>A workshop to answer critical questions, plan the features of your product and reduce the risk.</p>
+                                </div>
+                                <h3 className='text-xl font-bold py-5 text-lime-900'>Social Media Management</h3>
+                                <p className='text-gray-500 text-md'>With the global trend in digital marketing, we provide a result-oriented strategies to our teeming clients to enable them increase their customers base by a way of community engagements campaigns across major social media platforms.</p>
                                 <button className='text-gray-500 py-5 text-lg'>
                                     Learn More
                                 </button>
                             </div>
+
+
                         </div>
                     </div>
                 </section>

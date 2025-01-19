@@ -21,9 +21,11 @@ const Navbar = () => {
             <nav className="bg-[#191919] shadow-sm fixed top-0 left-0 right-0 z-50 ">
                 <div className="container mx-auto px-8 sm:px-1 lg:px-12 flex items-center justify-between h-[6rem]">
                     {/* Logo */}
-                    <div className="flex items-center">
-                        <img className="h-8 w-15" src={Logo} alt="Logo" />
-                    </div>
+                    <Link to="/">
+                        <div className="flex items-center">
+                            <img className="h-8 w-15" src={Logo} alt="Logo" />
+                        </div>
+                    </Link>
 
                     {/* Menu Items */}
                     <div className={`lg:flex space-x-4 ${isMenuOpen ? 'flex' : 'hidden'} lg:space-x-4`}>
@@ -44,11 +46,11 @@ const Navbar = () => {
 
                     {/* Icons & CTA */}
                     <div className="flex items-center space-x-4">
-                       <a href="/Contact">
-                       <button className="bg-black border border-white font-sans font-medium transition-color duration-300 text-white px-4 py-2 hidden lg:block rounded-md hover:bg-white hover:text-black">
-                            Get In Touch
-                        </button>
-                       </a>
+                        <a href="/Contact">
+                            <button className="bg-black border border-white font-sans font-medium transition-color duration-300 text-white px-4 py-2 hidden lg:block rounded-md hover:bg-white hover:text-black">
+                                Get In Touch
+                            </button>
+                        </a>
                     </div>
 
                     {/* Mobile Menu Button */}
