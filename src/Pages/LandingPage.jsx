@@ -11,6 +11,7 @@ import MyFont from '../images/file11.svg';
 import MyFont2 from '../images/file22.svg';
 import MyFont3 from '../images/file33.svg';
 import PhoneImage from '../images/phoneImg.webp';
+import { Link } from "react-router-dom";
 import boxImage from '../images/img-box.png';
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import FlagIcon from '@mui/icons-material/Flag';
@@ -73,11 +74,11 @@ const LandingPage = () => {
                         data-aos="fade-up"
                         data-aos-anchor-placement="bottom-bottom"
                         data-aos-duration="1200">
-                        <a href="/Service">
+                        <Link to="/Service">
                             <button className="font-sans px-6 py-4 bg-lime-600 text-white rounded-md hover:bg-lime-700">
                                 Discover Now
                             </button>
-                        </a>
+                        </Link>
                         <button className="font-sans hidden lg:block px-6 py-4 border border-lime-500 text-black rounded-md hover:border-lime-700">
                             How It Works
                         </button>
@@ -101,11 +102,11 @@ const LandingPage = () => {
                         <p className="font-sans text-customBlueGray mb-4">
                             We combine business opportunities with customer expectations to design, transform, and deliver useful products and unique brand experiences.
                         </p>
-                        <a href="/Contact">
+                        <Link to="/Contact">
                             <button className="text-customBlueGray text-lg font-medium hover:text-lime-600">
                                 Learn More
                             </button>
-                        </a>
+                        </Link>
                     </div>
 
                     <div className="flex flex-col w-[90%] sm:w-screen md:w-[auto] sm:px-4 max-w-sm text-left"
@@ -117,11 +118,11 @@ const LandingPage = () => {
                         <p className="font-sans text-customBlueGray mb-4">
                             We combine business opportunities with customer expectations to design, transform, and deliver useful products and unique brand experiences.
                         </p>
-                        <a href="/Contact">
+                        <Link to="/Contact">
                             <button className="text-customBlueGray text-lg font-medium hover:text-lime-600">
                                 Learn More
                             </button>
-                        </a>
+                        </Link>
                     </div>
 
                     <div className="flex flex-col w-[90%] sm:w-screen md:w-[auto] sm:px-4 max-w-sm text-left"
@@ -133,11 +134,11 @@ const LandingPage = () => {
                         <p className="font-sans text-customBlueGray mb-4">
                             We combine business opportunities with customer expectations to design, transform, and deliver useful products and unique brand experiences.
                         </p>
-                        <a href="/Contact">
+                        <Link to="/Contact">
                             <button className="text-customBlueGray text-lg font-medium hover:text-lime-600">
                                 Learn More
                             </button>
-                        </a>
+                        </Link>
                     </div>
                 </div>
 
@@ -193,7 +194,7 @@ const LandingPage = () => {
                             </div>
                         </div>
 
-                        <a href="/Contact">
+                        <Link to="/Contact">
                             <button className="mt-8 px-6 py-3 bg-lime-600 text-white rounded-lg hover:bg-lime-800"
                                 data-aos="fade-up"
                                 data-aos-anchor-placement="bottom-bottom"
@@ -201,7 +202,7 @@ const LandingPage = () => {
                             >
                                 Get In Touch
                             </button>
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </section >
@@ -333,11 +334,11 @@ const LandingPage = () => {
                     </div>
 
                     <div className="mt-8 flex justify-center">
-                        <a href="/Contact">
+                        <Link to="/Contact">
                             <button className="bg-black text-white border-lime-800 py-4 px-7 rounded-lg hover:border hover:bg-transparent hover:text-lime-600">
                                 Contact Us
                             </button>
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </section>

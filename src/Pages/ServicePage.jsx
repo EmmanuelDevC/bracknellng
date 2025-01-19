@@ -7,8 +7,8 @@ import backgroundImage from '../images/aboutBg.png';
 import backgroundImage2 from '../images/bg-pattern-3.png';
 import webAppImage from '../images/web-app.jpg';
 import consultingImage from '../images/Business_Consulting.jpg';
-import techImage from '../images/technology_services.jpg';
-import customerImage from '../images/cutomer_support.jpg';
+import branding from '../images/rebranding.jpg';
+import uiuxImage from '../images/uiux.webp';
 import backendImage from '../images/backend.jpg';
 import analyticsImage from '../images/business_analytics.webp';
 import { Link } from 'react-router-dom'
@@ -137,16 +137,16 @@ const Service = () => {
 
                                 <div className="w-full p-10 flex flex-col justify-center bg-white">
                                     <h2 className="font-semibold py-5 font-sans text-lime-900 text-2xl rounded-md">
-                                        Web Application
+                                        Web App Development
                                     </h2>
                                     <p className="text-md font-sans text-customBlueGray pb-5 rounded-md">
                                         Together we transform your business from the people to the processes.
                                     </p>
-                                    <a href='/Contact'>
+                                    <Link to='/Contact'>
                                         <button className="py-4 px-6 w-40 transition-color duration-300 ease-in-out hover:bg-lime-800 rounded-md text-lime-800 hover:text-white border border-lime-600">
                                             Contact Us
                                         </button>
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                             <div className="h-fit border text-left w-full rounded-xl overflow-hidden max-w-sm"
@@ -165,16 +165,16 @@ const Service = () => {
 
                                 <div className="w-full p-10 flex flex-col justify-center bg-white">
                                     <h2 className="font-semibold py-5 font-sans text-lime-900 text-2xl rounded-md">
-                                        Business Consulting
+                                        Enterprise Business Solutions
                                     </h2>
                                     <p className="text-md font-sans text-customBlueGray pb-5 rounded-md">
                                         Together we transform your business from the people to the processes.
                                     </p>
-                                    <a href='/Contact'>
+                                    <Link to='/Contact'>
                                         <button className="py-4 px-6 w-40 transition-color duration-300 ease-in-out hover:bg-lime-800 rounded-md text-lime-800 hover:text-white border border-lime-600">
                                             Contact Us
                                         </button>
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                             <div className="h-fit border text-left w-full rounded-xl overflow-hidden max-w-sm"
@@ -187,22 +187,22 @@ const Service = () => {
                             >
 
                                 <div className="w-full h-64 ">
-                                    <img src={techImage} alt="" className="w-full h-64 h-full object-cover" />
+                                    <img src={uiuxImage} alt="" className="w-full h-64 h-full object-cover" />
                                 </div>
 
 
                                 <div className="w-full p-10 flex flex-col justify-center bg-white">
                                     <h2 className="font-semibold py-5 font-sans text-lime-900 text-2xl rounded-md">
-                                        Technology Services
+                                        UI/UX Development
                                     </h2>
                                     <p className="text-md font-sans text-customBlueGray pb-5 rounded-md">
                                         Together we transform your business from the people to the processes.
                                     </p>
-                                    <a href='/Contact'>
+                                    <Link to='/Contact'>
                                         <button className="py-4 px-6 w-40 transition-color duration-300 ease-in-out hover:bg-lime-800 rounded-md text-lime-800 hover:text-white border border-lime-600">
                                             Contact Us
                                         </button>
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                             <div className="h-fit border text-left w-full rounded-xl overflow-hidden max-w-sm"
@@ -215,22 +215,22 @@ const Service = () => {
                             >
 
                                 <div className="w-full h-64 ">
-                                    <img src={customerImage} alt="" className="w-full h-64 h-full object-cover" />
+                                    <img src={branding} alt="" className="w-full h-64 h-full object-cover" />
                                 </div>
 
 
                                 <div className="w-full p-10 flex flex-col justify-center bg-white">
                                     <h2 className="font-semibold py-5 font-sans text-lime-900 text-2xl rounded-md">
-                                        Customer Support
+                                        Corporate Branding
                                     </h2>
                                     <p className="text-md font-sans text-customBlueGray pb-5 rounded-md">
                                         Together we transform your business from the people to the processes.
                                     </p>
-                                    <a href='/Contact'>
+                                    <Link to='/Contact'>
                                         <button className="py-4 px-6 w-40 transition-color duration-300 ease-in-out hover:bg-lime-800 rounded-md text-lime-800 hover:text-white border border-lime-600">
                                             Contact Us
                                         </button>
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                             <div className="h-fit border text-left w-full rounded-xl overflow-hidden max-w-sm"
@@ -249,16 +249,16 @@ const Service = () => {
 
                                 <div className="w-full p-10 flex flex-col justify-center bg-white">
                                     <h2 className="font-semibold py-5 font-sans text-lime-900 text-2xl rounded-md">
-                                        Senior Backend Engineer
+                                        Managed Services
                                     </h2>
                                     <p className="text-md font-sans text-customBlueGray pb-5 rounded-md">
                                         Together we transform your business from the people to the processes.
                                     </p>
-                                    <a href='/Contact'>
+                                    <Link to='/Contact'>
                                         <button className="py-4 px-6 w-40 transition-color duration-300 ease-in-out hover:bg-lime-800 rounded-md text-lime-800 hover:text-white border border-lime-600">
                                             Contact Us
                                         </button>
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                             <div className="h-fit border text-left w-full rounded-xl overflow-hidden max-w-sm"
@@ -282,11 +282,11 @@ const Service = () => {
                                     <p className="text-md font-sans text-customBlueGray pb-5 rounded-md">
                                         Together we transform your business from the people to the processes.
                                     </p>
-                                    <a href='/Contact'>
+                                    <Link to='/Contact'>
                                         <button className="py-4 px-6 w-40 transition-color duration-300 ease-in-out hover:bg-lime-800 rounded-md text-lime-800 hover:text-white border border-lime-600">
                                             Contact Us
                                         </button>
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
 
