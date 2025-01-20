@@ -133,7 +133,7 @@ const ContactUs = () => {
                     backgroundBlendMode: "overlay",
                 }}
             >
-                <div className="max-w-6xl mx-auto px-6 lg:px-12"
+                <div className="max-w-6xl mx-auto lg:px-12"
                 >
                     <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center text-lime-900 mb-8">
                         Get in Touch
@@ -143,7 +143,7 @@ const ContactUs = () => {
                     </p>
                     <form
                         onSubmit={handleSubmit}
-                        className="grid grid-cols-1 md:grid-cols-2 gap-6 bg-[#191919] shadow-md rounded-2xl p-5 lg:p-8"
+                        className="grid grid-cols-1 md:grid-cols-2 gap-6 bg-[#191919] shadow-md lg:rounded-2xl md:rounded-2xl p-6 lg:p-8"
                     >
                         {/* Name */}
                         <div className="flex flex-col">
