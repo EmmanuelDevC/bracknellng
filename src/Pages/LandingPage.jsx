@@ -343,12 +343,7 @@ const LandingPage = () => {
                 </div>
             </section>
 
-            {/* Section Below Hero */}
-            <section className="py-20 px-5 md:px-10 lg:px-20 text-center">
-                {/* Content */}
-            </section>
 
-            {/* Back to Top Button */}
             <button
                 onClick={scrollToTop}
                 className="fixed bottom-5 shadow-2xl right-5 bg-lime-600 text-white px-4 py-2 rounded-full shadow-lg hover:bg-lime-700"
