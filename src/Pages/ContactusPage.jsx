@@ -41,7 +41,7 @@ const ContactUs = () => {
                         />
                     </svg>
                 </div>
-                <div className="flex justify-between my-5 mb-10">
+                <div className="flex flex-wrap justify-between my-5 mb-10">
                     <Link to="/">
                         <button className="py-2 px-5 border border-lime-500 rounded-full">Back to home page</button>
                     </Link>
