@@ -42,7 +42,7 @@ const ContactUs = () => {
                     </svg>
                 </div>
                 <div className="flex flex-wrap text-center justify-center my-5 mb-10">
-                    <Link to="/Service" className="my-2">
+                    <Link to="/Service" className="my-2 mx-4">
                         <button className="py-2 px-5 border border-lime-500 rounded-full"> Our Services</button>
                     </Link>
                     <Link to="/">
