@@ -245,7 +245,7 @@ const LandingPage = () => {
 
                     </h1>
                     <p className="text-customBlueGray text-xl mb-10">
-                        Bracknell designs innovative concepts, prototypes, and processes to transform  <br /> your services and experiences for a competitive edge in the market.
+                        Bracknell designs innovative concepts, prototypes, and processes to transform  <br className="hidden lg:block md:block" /> your services and experiences for a competitive edge in the market.
 
                     </p>
 
