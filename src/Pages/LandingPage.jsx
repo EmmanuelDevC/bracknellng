@@ -244,7 +244,7 @@ const LandingPage = () => {
                         Accelerate Your Business Growth with Bracknell
 
                     </h1>
-                    <p className="text-customBlueGray text-sm sm:text-sm md:text-lg lg:text-xl mb-10">
+                    <p className="text-customBlueGray text-sm md:text-lg lg:text-xl mb-10">
                         Bracknell designs innovative concepts, prototypes, and processes to transform  <br /> your services and experiences for a competitive edge in the market.
 
                     </p>
@@ -304,7 +304,7 @@ const LandingPage = () => {
                             <h2 className="text-2xl sm:text-4xl md:text-4xl lg:text-4xl text-purple-900 font-bold mb-5">
                                 Strategies that get you on <br className="lg:block sm:hidden" /> the path to success
                             </h2>
-                            <p className="text-gray-500 text-sm lg:text-lg mb-8">
+                            <p className="text-gray-500 text-lg mb-8">
                                 With Bracknell’s deep industry expertise and methodologies like Lean Strategy and Business Design, we equip organizations to embrace change and thrive in competitive markets.
 
                             </p>
