@@ -18,14 +18,31 @@ import Footer from "../Components/Footer";
 
 const Service = () => {
 
+    const [openIndex, setOpenIndex] = useState(null);
+
     const faqs = [
-        "What do I need to know before contacting you?",
-        "Do you have any reviews from satisfied customers?",
-        "How much time will it take for you to make my app?",
-        "How do you guarantee product quality?",
-        "Should I create a mobile or a web app?",
-        "What happens after you finish my app?",
+        { question: "What do I need to know before contacting you?", answer: "Before reaching out to Bracknell, it's helpful to have a clear idea of your project requirements, target audience, budget, and timeline. If you're unsure, our team can guide you through the process." },
+
+
+        { question: "What happens after you finish my app?", answer: "After development, Bracknell provides post-launch support, including maintenance, updates, and scaling options. We also offer guidance on marketing strategies and user acquisition to ensure your app’s success" },
+
+
+        { question: "Do you have any reviews from satisfied customers?", answer: "Yes! Bracknell has worked with multiple clients across various industries, delivering high-quality software solutions. We’d be happy to share testimonials and case studies upon request." },
+
+
+        { question: "How much time will it take for you to make my app?", answer: "The timeline depends on the complexity of your app, required features, and development approach. On average, a basic app takes 4–8 weeks, while a more complex project may take several months." },
+
+
+        { question: "How do you guarantee product quality?", answer: "Bracknell follows a rigorous development process, including thorough testing, code reviews, and adherence to industry best practices. We also ensure your app meets security, performance, and user experience standards." },
+
+
+        { question: "Should I create a mobile or a web app?", answer: "It depends on your business goals and target audience. A web app is accessible across all devices, while a mobile app provides better user engagement and native features. We can help you decide the best option for your needs." },
+
     ];
+
+    const toggleFAQ = (index) => {
+        setOpenIndex(openIndex === index ? null : index);
+    };
 
     const scrollToTop = () => {
         window.scrollTo({ top: 0, behavior: "smooth" });
@@ -80,9 +97,10 @@ const Service = () => {
                             data-aos-duration="700"
                         >
                             <img className="h-12 w-12 mb-4" src={MyFont} alt="Icon" />
-                            <h2 className="font-bold text-lime-800 font-sans text-lg lg:text-xl sm:text-lg mb-2">Design-led digital transformation</h2>
+                            <h2 className="font-bold text-lime-800 font-sans text-lg lg:text-xl sm:text-lg mb-2">Drive Innovation with Digital Transformation
+                            </h2>
                             <p className="font-sans text-customBlueGray mb-4">
-                                We combine business opportunities with customer expectations to design, transform, and deliver useful products and unique brand experiences.
+                                We bridge business potential with user-centric design to create seamless digital experiences, helping brands stay ahead in an evolving market.
                             </p>
 
                         </div>
@@ -92,9 +110,9 @@ const Service = () => {
                             data-aos-duration="1000"
                         >
                             <img className="h-12 w-12 mb-4" src={MyFont2} alt="Icon" />
-                            <h2 className="font-bold text-lime-800 font-sans text-lg lg:text-xl sm:text-lg mb-2">Tansition to sustainable futures</h2>
+                            <h2 className="font-bold text-lime-800 font-sans text-lg lg:text-xl sm:text-lg mb-2">Build a Sustainable & Scalable Future</h2>
                             <p className="font-sans text-customBlueGray mb-4">
-                                We combine business opportunities with customer expectations to design, transform, and deliver useful products and unique brand experiences.
+                                Our innovative solutions drive sustainable growth, balancing business success with environmental responsibility for a future-proof strategy.
                             </p>
 
                         </div>
@@ -104,9 +122,9 @@ const Service = () => {
                             data-aos-duration="1200"
                         >
                             <img className="h-12 w-12 mb-4" src={MyFont3} alt="Icon" />
-                            <h2 className="font-bold text-lime-800 font-sans text-lg lg:text-xl sm:text-lg mb-2">We empower our partners</h2>
+                            <h2 className="font-bold text-lime-800 font-sans text-lg lg:text-xl sm:text-lg mb-2">Empowering Businesses for Success</h2>
                             <p className="font-sans text-customBlueGray mb-4">
-                                We combine business opportunities with customer expectations to design, transform, and deliver useful products and unique brand experiences.
+                                We collaborate with industry leaders to deliver tailored digital solutions, helping businesses maximize efficiency and customer engagement.
                             </p>
 
                         </div>
@@ -120,178 +138,83 @@ const Service = () => {
                             Outstanding software and services <br className="hidden lg:block md:block" /> that solve your hassle
                         </h1>
 
-                        <div className="grid lg:grid-cols-3 gap-12 md:grid-cols-2 sm:grid-cols-1 my-5 lg:my-10 md:my-10 ">
-                            <div className="h-fit border text-left w-full rounded-xl overflow-hidden max-w-sm"
-                                style={{
-                                    borderRadius: "50px",
-                                    boxShadow: "0 10px 16px rgba(188, 188, 188, 0.2)" // Example of a soft shadow
-                                }}
-                                data-aos="fade-up"
-                                data-aos-duration="400"
-                            >
+                        <div className="grid lg:grid-cols-3 gap-12 md:grid-cols-2 sm:grid-cols-1 my-5 lg:my-10 md:my-10">
+                            {[
+                                {
+                                    title: "Web App Development",
+                                    description: "We build scalable and high-performance web applications tailored to your business needs.",
+                                    image: webAppImage,
+                                    alt: "Web App Development Service",
+                                },
+                                {
+                                    title: "Enterprise Business Solutions",
+                                    description: "Transform your enterprise with cutting-edge business solutions and automation.",
+                                    image: consultingImage,
+                                    alt: "Enterprise Business Solutions",
+                                },
+                                {
+                                    title: "UI/UX Development",
+                                    description: "Enhance user engagement with intuitive and aesthetically pleasing UI/UX designs.",
+                                    image: uiuxImage,
+                                    alt: "UI/UX Design Service",
+                                },
+                                {
+                                    title: "Corporate Branding",
+                                    description: "Create a strong brand identity that resonates with your target audience.",
+                                    image: branding,
+                                    alt: "Corporate Branding Service",
+                                },
+                                {
+                                    title: "Managed Services",
+                                    description: "Ensure seamless IT operations with our comprehensive managed services.",
+                                    image: backendImage,
+                                    alt: "IT Managed Services",
+                                },
+                                {
+                                    title: "Business Analytics",
+                                    description: "Leverage data-driven insights to make informed business decisions.",
+                                    image: analyticsImage,
+                                    alt: "Business Analytics Service",
+                                },
+                            ].map((service, index) => (
+                                <div
+                                    key={index}
+                                    className="h-fit border text-left w-full rounded-xl overflow-hidden max-w-sm"
+                                    style={{
+                                        borderRadius: "50px",
+                                        boxShadow: "0 10px 16px rgba(188, 188, 188, 0.2)",
+                                    }}
+                                    data-aos="fade-up"
+                                    data-aos-duration={`${400 + index * 100}`}
+                                >
+                                    <div className="w-full h-64">
+                                        <img
+                                            src={service.image}
+                                            alt={service.alt}
+                                            className="w-full h-full object-cover"
+                                            loading="lazy"
+                                        />
+                                    </div>
 
-                                <div className="w-full h-64 ">
-                                    <img src={webAppImage} alt="" className="w-full h-64 h-full object-cover" />
+                                    <div className="w-full p-10 flex flex-col justify-center bg-white">
+                                        <h2 className="font-semibold py-5 font-sans text-lime-900 text-2xl rounded-md">
+                                            {service.title}
+                                        </h2>
+                                        <p className="text-md font-sans text-customBlueGray pb-5 rounded-md">
+                                            {service.description}
+                                        </p>
+                                        <Link to="/Contact">
+                                            <button
+                                                className="py-4 px-6 w-40 transition-color duration-300 ease-in-out hover:bg-lime-800 rounded-md text-lime-800 hover:text-white border border-lime-600"
+                                                aria-label={`Contact us for ${service.title}`}
+                                            >
+                                                Contact Us
+                                            </button>
+                                        </Link>
+                                    </div>
                                 </div>
-
-
-                                <div className="w-full p-10 flex flex-col justify-center bg-white">
-                                    <h2 className="font-semibold py-5 font-sans text-lime-900 text-2xl rounded-md">
-                                        Web App Development
-                                    </h2>
-                                    <p className="text-md font-sans text-customBlueGray pb-5 rounded-md">
-                                        Together we transform your business from the people to the processes.
-                                    </p>
-                                    <Link to='/Contact'>
-                                        <button className="py-4 px-6 w-40 transition-color duration-300 ease-in-out hover:bg-lime-800 rounded-md text-lime-800 hover:text-white border border-lime-600">
-                                            Contact Us
-                                        </button>
-                                    </Link>
-                                </div>
-                            </div>
-                            <div className="h-fit border text-left w-full rounded-xl overflow-hidden max-w-sm"
-                                style={{
-                                    borderRadius: "50px",
-                                    boxShadow: "0 10px 16px rgba(188, 188, 188, 0.2)" // Example of a soft shadow
-                                }}
-                                data-aos="fade-up"
-                                data-aos-duration="500"
-                            >
-
-                                <div className="w-full h-64 ">
-                                    <img src={consultingImage} alt="" className="w-full h-64 h-full object-cover" />
-                                </div>
-
-
-                                <div className="w-full p-10 flex flex-col justify-center bg-white">
-                                    <h2 className="font-semibold py-5 font-sans text-lime-900 text-2xl rounded-md">
-                                        Enterprise Business Solutions
-                                    </h2>
-                                    <p className="text-md font-sans text-customBlueGray pb-5 rounded-md">
-                                        Together we transform your business from the people to the processes.
-                                    </p>
-                                    <Link to='/Contact'>
-                                        <button className="py-4 px-6 w-40 transition-color duration-300 ease-in-out hover:bg-lime-800 rounded-md text-lime-800 hover:text-white border border-lime-600">
-                                            Contact Us
-                                        </button>
-                                    </Link>
-                                </div>
-                            </div>
-                            <div className="h-fit border text-left w-full rounded-xl overflow-hidden max-w-sm"
-                                style={{
-                                    borderRadius: "50px",
-                                    boxShadow: "0 10px 16px rgba(188, 188, 188, 0.2)" // Example of a soft shadow
-                                }}
-                                data-aos="fade-up"
-                                data-aos-duration="700"
-                            >
-
-                                <div className="w-full h-64 ">
-                                    <img src={uiuxImage} alt="" className="w-full h-64 h-full object-cover" />
-                                </div>
-
-
-                                <div className="w-full p-10 flex flex-col justify-center bg-white">
-                                    <h2 className="font-semibold py-5 font-sans text-lime-900 text-2xl rounded-md">
-                                        UI/UX Development
-                                    </h2>
-                                    <p className="text-md font-sans text-customBlueGray pb-5 rounded-md">
-                                        Together we transform your business from the people to the processes.
-                                    </p>
-                                    <Link to='/Contact'>
-                                        <button className="py-4 px-6 w-40 transition-color duration-300 ease-in-out hover:bg-lime-800 rounded-md text-lime-800 hover:text-white border border-lime-600">
-                                            Contact Us
-                                        </button>
-                                    </Link>
-                                </div>
-                            </div>
-                            <div className="h-fit border text-left w-full rounded-xl overflow-hidden max-w-sm"
-                                style={{
-                                    borderRadius: "50px",
-                                    boxShadow: "0 10px 16px rgba(188, 188, 188, 0.2)" // Example of a soft shadow
-                                }}
-                                data-aos="fade-up"
-                                data-aos-duration="400"
-                            >
-
-                                <div className="w-full h-64 ">
-                                    <img src={branding} alt="" className="w-full h-64 h-full object-cover" />
-                                </div>
-
-
-                                <div className="w-full p-10 flex flex-col justify-center bg-white">
-                                    <h2 className="font-semibold py-5 font-sans text-lime-900 text-2xl rounded-md">
-                                        Corporate Branding
-                                    </h2>
-                                    <p className="text-md font-sans text-customBlueGray pb-5 rounded-md">
-                                        Together we transform your business from the people to the processes.
-                                    </p>
-                                    <Link to='/Contact'>
-                                        <button className="py-4 px-6 w-40 transition-color duration-300 ease-in-out hover:bg-lime-800 rounded-md text-lime-800 hover:text-white border border-lime-600">
-                                            Contact Us
-                                        </button>
-                                    </Link>
-                                </div>
-                            </div>
-                            <div className="h-fit border text-left w-full rounded-xl overflow-hidden max-w-sm"
-                                style={{
-                                    borderRadius: "50px",
-                                    boxShadow: "0 10px 16px rgba(188, 188, 188, 0.2)" // Example of a soft shadow
-                                }}
-                                data-aos="fade-up"
-                                data-aos-duration="500"
-                            >
-
-                                <div className="w-full h-64 ">
-                                    <img src={backendImage} alt="" className="w-full h-64 h-full object-cover" />
-                                </div>
-
-
-                                <div className="w-full p-10 flex flex-col justify-center bg-white">
-                                    <h2 className="font-semibold py-5 font-sans text-lime-900 text-2xl rounded-md">
-                                        Managed Services
-                                    </h2>
-                                    <p className="text-md font-sans text-customBlueGray pb-5 rounded-md">
-                                        Together we transform your business from the people to the processes.
-                                    </p>
-                                    <Link to='/Contact'>
-                                        <button className="py-4 px-6 w-40 transition-color duration-300 ease-in-out hover:bg-lime-800 rounded-md text-lime-800 hover:text-white border border-lime-600">
-                                            Contact Us
-                                        </button>
-                                    </Link>
-                                </div>
-                            </div>
-                            <div className="h-fit border text-left w-full rounded-xl overflow-hidden max-w-sm"
-                                style={{
-                                    borderRadius: "50px",
-                                    boxShadow: "0 10px 16px rgba(188, 188, 188, 0.2)" // Example of a soft shadow
-                                }}
-                                data-aos="fade-up"
-                                data-aos-duration="700"
-                            >
-
-                                <div className="w-full h-64 ">
-                                    <img src={analyticsImage} alt="" className="w-full h-64 h-full object-cover" />
-                                </div>
-
-
-                                <div className="w-full p-10 flex flex-col justify-center bg-white">
-                                    <h2 className="font-semibold py-5 font-sans text-lime-900 text-2xl rounded-md">
-                                        Business Analytics
-                                    </h2>
-                                    <p className="text-md font-sans text-customBlueGray pb-5 rounded-md">
-                                        Together we transform your business from the people to the processes.
-                                    </p>
-                                    <Link to='/Contact'>
-                                        <button className="py-4 px-6 w-40 transition-color duration-300 ease-in-out hover:bg-lime-800 rounded-md text-lime-800 hover:text-white border border-lime-600">
-                                            Contact Us
-                                        </button>
-                                    </Link>
-                                </div>
-                            </div>
-
+                            ))}
                         </div>
-
                     </div>
 
                 </section>
@@ -403,21 +326,36 @@ const Service = () => {
                             {faqs.map((faq, index) => (
                                 <div
                                     key={index}
-                                    className="border border-gray-200 rounded-lg p-4 flex items-center justify-between cursor-pointer shadow-sm hover:shadow-md"
+                                    className="border border-gray-200 rounded-lg p-4 shadow-sm hover:shadow-md"
                                 >
-                                    <span className="text-gray-800 font-medium">{faq}</span>
-                                    <button className="text-lime-600 font-bold text-xl">+</button>
+                                    <div className="flex items-center justify-between">
+                                        <span className="text-gray-800 font-medium">{faq.question}</span>
+                                        <button
+                                            className="text-lime-600 font-bold text-xl"
+                                            onClick={() => toggleFAQ(index)} // Attach onClick to the button
+                                        >
+                                            {openIndex === index ? '-' : '+'}
+                                        </button>
+                                    </div>
+                                    {openIndex === index && (
+                                        <div className="mt-4 text-gray-600">
+                                            {faq.answer}
+                                        </div>
+                                    )}
                                 </div>
                             ))}
                         </div>
 
                         <div className="mt-8 flex justify-center">
-                            <button className="bg-black text-white border-lime-800 py-4 px-7 rounded-lg hover:border hover:bg-transparent hover:text-lime-600">
-                                Contact Us
-                            </button>
+                            <Link to="/Contact">
+                                <button className="bg-black text-white border-lime-800 py-4 px-7 rounded-lg hover:border hover:bg-transparent hover:text-lime-600">
+                                    Contact Us
+                                </button>
+                            </Link>
                         </div>
                     </div>
                 </section>
+
             </div>
 
 

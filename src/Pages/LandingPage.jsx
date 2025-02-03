@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "../Components/Nav";
 import backgroundImage from '../images/business-hero.jpeg';
 import backgroundImage2 from '../images/bg-pattern-3.png';
@@ -20,14 +20,33 @@ import WorkOutlineIcon from '@mui/icons-material/WorkOutline';
 import Footer from "../Components/Footer";
 
 const LandingPage = () => {
+
+
+    const [openIndex, setOpenIndex] = useState(null);
+
     const faqs = [
-        "What do I need to know before contacting you?",
-        "Do you have any reviews from satisfied customers?",
-        "How much time will it take for you to make my app?",
-        "How do you guarantee product quality?",
-        "Should I create a mobile or a web app?",
-        "What happens after you finish my app?",
+        { question: "What do I need to know before contacting you?", answer: "Before reaching out to Bracknell, it's helpful to have a clear idea of your project requirements, target audience, budget, and timeline. If you're unsure, our team can guide you through the process." },
+
+
+        { question: "What happens after you finish my app?", answer: "After development, Bracknell provides post-launch support, including maintenance, updates, and scaling options. We also offer guidance on marketing strategies and user acquisition to ensure your app’s success" },
+
+
+        { question: "Do you have any reviews from satisfied customers?", answer: "Yes! Bracknell has worked with multiple clients across various industries, delivering high-quality software solutions. We’d be happy to share testimonials and case studies upon request." },
+
+
+        { question: "How much time will it take for you to make my app?", answer: "The timeline depends on the complexity of your app, required features, and development approach. On average, a basic app takes 4–8 weeks, while a more complex project may take several months." },
+
+
+        { question: "How do you guarantee product quality?", answer: "Bracknell follows a rigorous development process, including thorough testing, code reviews, and adherence to industry best practices. We also ensure your app meets security, performance, and user experience standards." },
+
+
+        { question: "Should I create a mobile or a web app?", answer: "It depends on your business goals and target audience. A web app is accessible across all devices, while a mobile app provides better user engagement and native features. We can help you decide the best option for your needs." },
+
     ];
+
+    const toggleFAQ = (index) => {
+        setOpenIndex(openIndex === index ? null : index);
+    };
 
     const scrollToTop = () => {
         window.scrollTo({ top: 0, behavior: "smooth" });
@@ -97,13 +116,15 @@ const LandingPage = () => {
                         data-aos="fade-up"
                         data-aos-duration="700"
                     >
-                        <img className="h-12 w-12 mb-4" src={MyFont} alt="Icon" />
-                        <h2 className="font-bold text-lime-800 font-sans text-lg lg:text-xl sm:text-lg mb-2">Design-led digital transformation</h2>
+                        <img className="h-12 w-12 mb-4" src={MyFont} alt="Digital Transformation Icon" />
+                        <h2 className="font-bold text-lime-800 font-sans text-lg lg:text-xl sm:text-lg mb-2">
+                            Drive Innovation with Digital Transformation
+                        </h2>
                         <p className="font-sans text-customBlueGray mb-4">
-                            We combine business opportunities with customer expectations to design, transform, and deliver useful products and unique brand experiences.
+                            We bridge business potential with user-centric design to create seamless digital experiences, helping brands stay ahead in an evolving market.
                         </p>
                         <Link to="/Contact">
-                            <button className="text-customBlueGray text-lg font-medium hover:text-lime-600">
+                            <button className="text-customBlueGray font-medium hover:text-lime-600">
                                 Learn More
                             </button>
                         </Link>
@@ -113,13 +134,15 @@ const LandingPage = () => {
                         data-aos="fade-up"
                         data-aos-duration="1000"
                     >
-                        <img className="h-12 w-12 mb-4" src={MyFont2} alt="Icon" />
-                        <h2 className="font-bold text-lime-800 font-sans text-lg lg:text-xl sm:text-lg mb-2">Tansition to sustainable futures</h2>
+                        <img className="h-12 w-12 mb-4" src={MyFont2} alt="Sustainability Icon" />
+                        <h2 className="font-bold text-lime-800 font-sans text-lg lg:text-xl sm:text-lg mb-2">
+                            Build a Sustainable & Scalable Future
+                        </h2>
                         <p className="font-sans text-customBlueGray mb-4">
-                            We combine business opportunities with customer expectations to design, transform, and deliver useful products and unique brand experiences.
+                            Our innovative solutions drive sustainable growth, balancing business success with environmental responsibility for a future-proof strategy.
                         </p>
                         <Link to="/Contact">
-                            <button className="text-customBlueGray text-lg font-medium hover:text-lime-600">
+                            <button className="text-customBlueGray  font-medium hover:text-lime-600">
                                 Learn More
                             </button>
                         </Link>
@@ -129,17 +152,20 @@ const LandingPage = () => {
                         data-aos="fade-up"
                         data-aos-duration="1200"
                     >
-                        <img className="h-12 w-12 mb-4" src={MyFont3} alt="Icon" />
-                        <h2 className="font-bold text-lime-800 font-sans text-lg lg:text-xl sm:text-lg mb-2">We empower our partners</h2>
+                        <img className="h-12 w-12 mb-4" src={MyFont3} alt="Partnership Icon" />
+                        <h2 className="font-bold text-lime-800 font-sans text-lg lg:text-xl sm:text-lg mb-2">
+                            Empowering Businesses for Success
+                        </h2>
                         <p className="font-sans text-customBlueGray mb-4">
-                            We combine business opportunities with customer expectations to design, transform, and deliver useful products and unique brand experiences.
+                            We collaborate with industry leaders to deliver tailored digital solutions, helping businesses maximize efficiency and customer engagement.
                         </p>
                         <Link to="/Contact">
-                            <button className="text-customBlueGray text-lg font-medium hover:text-lime-600">
+                            <button className="text-customBlueGray font-medium hover:text-lime-600">
                                 Learn More
                             </button>
                         </Link>
                     </div>
+
                 </div>
 
                 <hr className="bg-lime-600 my-20" />
@@ -215,11 +241,12 @@ const LandingPage = () => {
                     }}
                 >
                     <h1 className="text-2xl font-sans sm:text-4xl mt-10 sm:pt-10 sm:pb-3 md:text-4xl lg:text-5xl text-lime-900 font-bold mb-5">
-                        Develop your next business today
+                        Accelerate Your Business Growth with Bracknell
+
                     </h1>
                     <p className="text-customBlueGray text-sm sm:text-sm md:text-lg lg:text-xl mb-10">
-                        We design new concepts, prototypes, and processes for the next <br className="lg:block sm:hidden" />
-                        generation of services and experiences, ready for the market.
+                        Bracknell designs innovative concepts, prototypes, and processes to transform  <br /> your services and experiences for a competitive edge in the market.
+
                     </p>
 
                     {/* Main Content */}
@@ -277,12 +304,15 @@ const LandingPage = () => {
                             <h2 className="text-2xl sm:text-4xl md:text-4xl lg:text-4xl text-purple-900 font-bold mb-5">
                                 Strategies that get you on <br className="lg:block sm:hidden" /> the path to success
                             </h2>
-                            <p className="text-gray-500 text-sm sm:text-lg md:text-lg lg:text-lg mb-8">
-                                Through an in-depth knowledge of all industrial sectors and the application of approaches such as Lean Strategy and Business Design, we prepare organisations to welcome change, to be ready to evolve rapidly while remaining competitive in the market.
+                            <p className="text-gray-500 text-sm lg:text-lg mb-8">
+                                With Bracknell’s deep industry expertise and methodologies like Lean Strategy and Business Design, we equip organizations to embrace change and thrive in competitive markets.
+
                             </p>
-                            <button className="text-purple-600 font-bold mb-20 hover:underline">
-                                See How it Works →
-                            </button>
+                            <Link to="Service">
+                                <button className="text-purple-600 font-bold mb-20 hover:underline">
+                                    Discover How We Can Help →
+                                </button>
+                            </Link>
                         </div>
                     </div>
                 </section>
@@ -325,10 +355,22 @@ const LandingPage = () => {
                         {faqs.map((faq, index) => (
                             <div
                                 key={index}
-                                className="border border-gray-200 rounded-lg p-4 flex items-center justify-between cursor-pointer shadow-sm hover:shadow-md"
+                                className="border border-gray-200 rounded-lg p-4 shadow-sm hover:shadow-md"
                             >
-                                <span className="text-gray-800 font-medium">{faq}</span>
-                                <button className="text-lime-600 font-bold text-xl">+</button>
+                                <div className="flex items-center justify-between">
+                                    <span className="text-gray-800 font-medium">{faq.question}</span>
+                                    <button
+                                        className="text-lime-600 font-bold text-xl"
+                                        onClick={() => toggleFAQ(index)} // Attach onClick to the button
+                                    >
+                                        {openIndex === index ? '-' : '+'}
+                                    </button>
+                                </div>
+                                {openIndex === index && (
+                                    <div className="mt-4 text-gray-600">
+                                        {faq.answer}
+                                    </div>
+                                )}
                             </div>
                         ))}
                     </div>

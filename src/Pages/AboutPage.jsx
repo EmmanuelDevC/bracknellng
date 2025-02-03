@@ -21,6 +21,10 @@ import Footer from '../Components/Footer';
 
 const About = () => {
 
+    const scrollToTop = () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    };
+
 
     return (
         <>
@@ -67,14 +71,16 @@ const About = () => {
                                 data-aos-anchor-placement="bottom-bottom"
                                 data-aos-duration="500"
                             >
-                                Growth strategies to be effective & competitive
+                                Who We Are
                             </h1>
                             <p className="text-gray-600 py-3 text-base md:text-lg"
                                 data-aos="fade-up"
                                 data-aos-anchor-placement="bottom-bottom"
                                 data-aos-duration="1000"
                             >
-                                <b>Bracknell Technologies Limited</b> is an innovative Nigerian based Technology Solutions Provider offering state-of-art Business Process Automation, Enterprise Web Applications, Computer Networking, Digital Marketing Strategies, Managed Services, and General Computer Hardware Services.
+                                Bracknell is a leading software development company committed to delivering cutting-edge digital solutions for businesses of all sizes. We specialize in custom software development, web and mobile app development, AI-driven solutions, and cloud-based applications. Our expert team transforms ideas into high-performance, scalable, and secure applications that drive business growth.
+
+
                             </p>
                             <Link to="/Service">
                                 <button className="py-3 md:py-4 mt-4 px-5 text-sm md:text-lg font-sans rounded-md bg-lime-800 text-white hover:bg-lime-700"
@@ -300,6 +306,14 @@ const About = () => {
                         </div>
                     </div>
                 </section>
+                <button
+                    onClick={scrollToTop}
+                    className="fixed bottom-5 shadow-2xl right-5 bg-lime-600 text-white px-4 py-2 rounded-full shadow-lg hover:bg-lime-700"
+                >
+                    <p className="md:hidden sm:hidden lg:block">↑ Scroll to Top</p>
+                    <p className="lg:hidden sm:hidden md:block">↑ Scroll to Top</p>
+                    <p className="md:hidden lg:hidden  sm:block">↑ Top</p>
+                </button>
                 <Footer />
             </div>
 
