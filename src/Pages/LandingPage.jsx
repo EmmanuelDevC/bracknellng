@@ -244,7 +244,7 @@ const LandingPage = () => {
                         Accelerate Your Business Growth with Bracknell
 
                     </h1>
-                    <p className="text-customBlueGray text-sm md:text-lg lg:text-xl mb-10">
+                    <p className="text-customBlueGray text-xl mb-10">
                         Bracknell designs innovative concepts, prototypes, and processes to transform  <br /> your services and experiences for a competitive edge in the market.
 
                     </p>
