@@ -7,6 +7,7 @@ import About from './Pages/AboutPage.jsx';
 import Nopage from './Pages/Nopage.jsx';
 import Service from './Pages/ServicePage.jsx';
 import ContactUs from './Pages/ContactusPage.jsx';
+import ScrollToTop from './Components/ScrollToTop.jsx';
 
 function App() {
   useEffect(() => {
@@ -21,6 +22,7 @@ function App() {
     <>
       {/* <LandingPage /> */}
       <Router>
+      <ScrollToTop />
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/About" element={<About />} />

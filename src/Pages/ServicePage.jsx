@@ -135,7 +135,7 @@ const Service = () => {
                     <div className=" flex flex-col justify-center text-center">
 
                         <h1 className="text-lime-900 font-semibold py-20 font-sans  font-bold text-2xl lg:text-4xl md:text-4xl">
-                            Outstanding software and services <br className="hidden lg:block md:block" /> that solve your hassle
+                            OUR SERVICES
                         </h1>
 
                         <div className="grid lg:grid-cols-3 gap-12 md:grid-cols-2 sm:grid-cols-1 my-5 lg:my-10 md:my-10">
@@ -218,7 +218,7 @@ const Service = () => {
                     </div>
 
                 </section>
-        
+
 
                 <section>
                     <div className="bg-white py-16 px-6 lg:px-[10rem]">
