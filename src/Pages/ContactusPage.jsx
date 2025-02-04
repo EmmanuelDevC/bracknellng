@@ -130,7 +130,7 @@ const ContactUs = () => {
                 </div>
             </section>
 
-            <section className="p-2 pt-10 lg:p-20"
+            <section className="p-4 pt-10 lg:p-20"
                 style={{
                     backgroundImage: `linear-gradient(to bottom, rgba(179, 247, 193, 0.5), rgba(235, 243, 255, 0.5), rgba(169, 134, 252, 0.5)), url(${backgroundImage2})`,
                     backgroundBlendMode: "overlay",
