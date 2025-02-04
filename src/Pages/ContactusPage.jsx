@@ -6,8 +6,8 @@ import happyImage from '../images/happy.webp';
 import thankyouImage from '../images/thankyou.png';
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
+import EmailIcon from '@mui/icons-material/Email';
 import PhoneIcon from '@mui/icons-material/Phone';
-import MarkEmailReadIcon from '@mui/icons-material/MarkEmailRead';
 import { Link } from 'react-router-dom'
 import Footer from "../Components/Footer";
 
@@ -130,169 +130,202 @@ const ContactUs = () => {
                 </div>
             </section>
 
-            <section className="py-16 "
+            <section className="p-2 pt-10 lg:p-20"
                 style={{
                     backgroundImage: `linear-gradient(to bottom, rgba(179, 247, 193, 0.5), rgba(235, 243, 255, 0.5), rgba(169, 134, 252, 0.5)), url(${backgroundImage2})`,
                     backgroundBlendMode: "overlay",
                 }}
             >
-                <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
-                    <div className="text-center mb-16">
-                        <h2 className="text-4xl md:text-5xl font-bold text-lime-900 mb-4">
-                            Get in Touch
-                        </h2>
-                        <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                            We'd love to hear from you. Reach out through our contact form or visit us directly. Our team will get back to you within 24 hours.
-                        </p>
-                    </div>
+                <div className="text-center mb-16">
+                    <h2 className="text-4xl md:text-5xl font-bold text-lime-900 mb-4">
+                        Get in Touch
+                    </h2>
+                    <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                        We'd love to hear from you. Reach out through our contact form or visit us directly. Our team will get back to you within 24 hours.
+                    </p>
+                </div>
+                <div className="grid md:grid-cols-2 gap-12 lg:gap-16"
+                >
 
-                    <div className="grid md:grid-cols-2 gap-12 lg:gap-16">
-                        {/* Contact Information Section */}
-                        <div className="space-y-8 bg-white p-6 rounded-2xl shadow-lg">
-                            <div className="space-y-4">
-                                <h3 className="text-2xl font-semibold text-lime-900 border-b pb-2">
-                                    Contact Information
-                                </h3>
-                                <div className="space-y-2 text-gray-700">
-                                    <div className="flex items-center gap-2">
-                                        <LocationOnIcon className="text-lime-700" />
-                                        <p className="text-lg">Plot 50, Samuel Ekunola Street</p>
-                                    </div>
-                                    <p className="ml-6">Off Ago Palace-Way Okota</p>
-                                    <p className="ml-6">Isolo, Lagos State</p>
-                                    <p className="ml-6">Nigeria</p>
-
-                                    <div className="pt-4 space-y-2">
-                                        <div className="flex items-center gap-2">
-                                            <PhoneIcon className="text-lime-700" />
-                                            <a href="tel:+2347011514116" className="hover:text-lime-900 transition-colors">
-                                                (+234) 701 151 4116
-                                            </a>
-                                        </div>
-                                        <div className="flex items-center gap-2">
-                                            <PhoneIcon className="text-lime-700" />
-                                            <a href="tel:+2348038774123" className="hover:text-lime-900 transition-colors">
-                                                (+234) 803 877 4123
-                                            </a>
-                                        </div>
-                                        <div className="flex items-center gap-2">
-                                            <MarkEmailReadIcon className="text-lime-700" />
-                                            <a href="mailto:info@bracknellng.com" className="hover:text-lime-900 transition-colors">
-                                                info@bracknellng.com
-                                            </a>
-                                        </div>
-                                    </div>
+                    <div className="space-y-8 bg-white p-6 rounded-2xl shadow-lg">
+                        <div className="space-y-4">
+                            <h3 className="text-2xl font-semibold text-lime-900 border-b pb-2">
+                                Contact Information
+                            </h3>
+                            <div className="space-y-2 text-gray-700">
+                                <div className="flex items-center gap-2">
+                                    <LocationOnIcon className="text-lime-700" />
+                                    <p className="text-lg">Plot 50, Samuel Ekunola Street</p>
                                 </div>
-                            </div>
+                                <p className="ml-6">Off Ago Palace-Way Okota</p>
+                                <p className="ml-6">Isolo, Lagos State</p>
+                                <p className="ml-6">Nigeria</p>
 
-                            <div className="space-y-4">
-                                <h3 className="text-xl font-semibold text-lime-900">Our Location</h3>
-                                <div className="aspect-video rounded-xl overflow-hidden shadow-lg">
-                                    <iframe
-                                        width="100%"
-                                        height="100%"
-                                        loading="lazy"
-                                        allowFullScreen
-                                        src="https://maps.google.com/maps?width=100%25&amp;height=350&amp;hl=en&amp;q=Plot%2050,%20Samuel%20Ekunola%20Street%20%20Off%20Ago%20Palace-Way%20Okota%20%20Isolo,%20Lagos%20State+(Bracknell%20software%20company)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-                                        className="border-0"
-                                    >
-                                    </iframe>
+                                <div className="pt-4 space-y-2">
+                                    <div className="flex items-center gap-2">
+                                        <PhoneIcon className="text-lime-700" />
+                                        <a href="tel:+2347011514116" className="hover:text-lime-900 transition-colors">
+                                            (+234) 701 151 4116
+                                        </a>
+                                    </div>
+                                    <div className="flex items-center gap-2">
+                                        <PhoneIcon className="text-lime-700" />
+                                        <a href="tel:+2348038774123" className="hover:text-lime-900 transition-colors">
+                                            (+234) 803 877 4123
+                                        </a>
+                                    </div>
+                                    <div className="flex items-center gap-2">
+                                        <EmailIcon className="text-lime-700" />
+                                        <a href="mailto:info@bracknellng.com" className="hover:text-lime-900 transition-colors">
+                                            info@bracknellng.com
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
-                        {/* Contact Form */}
-                        <form
-                            onSubmit={handleSubmit}
-                            className="bg-[#191919] rounded-2xl shadow-xl p-6 lg:p-8 space-y-6"
-                        >
-                            <h3 className="text-2xl font-semibold text-white mb-4">
-                                Send Us a Message
-                            </h3>
-
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                {/* Name Input */}
-                                <div className="space-y-2">
-                                    <label className="text-sm font-medium text-gray-200">Name</label>
-                                    <input
-                                        type="text"
-                                        required
-                                        className="w-full px-4 py-3 rounded-lg bg-gray-800 text-white focus:ring-2 focus:ring-lime-500 border border-gray-700 focus:border-transparent"
-                                        placeholder="John Doe"
-                                    />
-                                </div>
-
-                                {/* Email Input */}
-                                <div className="space-y-2">
-                                    <label className="text-sm font-medium text-gray-200">Email</label>
-                                    <input
-                                        type="email"
-                                        required
-                                        className="w-full px-4 py-3 rounded-lg bg-gray-800 text-white focus:ring-2 focus:ring-lime-500 border border-gray-700 focus:border-transparent"
-                                        placeholder="john@company.com"
-                                    />
-                                </div>
-
-                                {/* Company Input */}
-                                <div className="space-y-2">
-                                    <label className="text-sm font-medium text-gray-200">Company</label>
-                                    <input
-                                        type="text"
-                                        className="w-full px-4 py-3 rounded-lg bg-gray-800 text-white focus:ring-2 focus:ring-lime-500 border border-gray-700 focus:border-transparent"
-                                        placeholder="Company Name"
-                                    />
-                                </div>
-
-                                {/* Phone Input */}
-                                <div className="space-y-2">
-                                    <label className="text-sm font-medium text-gray-200">Phone</label>
-                                    <input
-                                        type="tel"
-                                        className="w-full px-4 py-3 rounded-lg bg-gray-800 text-white focus:ring-2 focus:ring-lime-500 border border-gray-700 focus:border-transparent"
-                                        placeholder="+234 000 000 0000"
-                                    />
-                                </div>
-
-                                {/* Service Select */}
-                                <div className="md:col-span-2 space-y-2">
-                                    <label className="text-sm font-medium text-gray-200">Service Needed</label>
-                                    <select
-                                        required
-                                        className="w-full px-4 py-3 rounded-lg bg-gray-800 text-white focus:ring-2 focus:ring-lime-500 border border-gray-700 focus:border-transparent"
-                                    >
-                                        <option value="">Select a service</option>
-                                        <option>Web App Development</option>
-                                        <option>Enterprise Business Solutions</option>
-                                        <option>UI/UX Development</option>
-                                        <option>Corporate Branding</option>
-                                        <option>Managed Services</option>
-                                        <option>Business Analytics</option>
-                                    </select>
-                                </div>
-
-                                {/* Message Textarea */}
-                                <div className="md:col-span-2 space-y-2">
-                                    <label className="text-sm font-medium text-gray-200">Message</label>
-                                    <textarea
-                                        rows="5"
-                                        required
-                                        className="w-full px-4 py-3 rounded-lg bg-gray-800 text-white focus:ring-2 focus:ring-lime-500 border border-gray-700 focus:border-transparent"
-                                        placeholder="How can we help you?"
-                                    />
-                                </div>
-
-                                {/* Submit Button */}
-                                <div className="md:col-span-2 pt-4">
-                                    <button
-                                        type="submit"
-                                        className="w-full py-3 px-6 bg-lime-600 hover:bg-lime-700 text-white font-semibold rounded-lg transition-all duration-300 transform hover:scale-[1.02]"
-                                    >
-                                        Send Message
-                                    </button>
-                                </div>
+                        <div className="space-y-4">
+                            <h3 className="text-xl font-semibold text-lime-900">Our Location</h3>
+                            <div className="aspect-video rounded-xl overflow-hidden shadow-lg">
+                                <iframe
+                                    width="100%"
+                                    height="100%"
+                                    loading="lazy"
+                                    allowFullScreen
+                                    src="https://maps.google.com/maps?width=100%25&amp;height=350&amp;hl=en&amp;q=Plot%2050,%20Samuel%20Ekunola%20Street%20%20Off%20Ago%20Palace-Way%20Okota%20%20Isolo,%20Lagos%20State+(Bracknell%20software%20company)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                                    className="border-0"
+                                >
+                                </iframe>
                             </div>
-                        </form>
+                        </div>
                     </div>
+                    <form
+                        onSubmit={handleSubmit}
+                        className="bg-[#191919] rounded-2xl shadow-xl p-6 lg:p-8 space-y-6"
+
+                    >
+                        <h3 className="text-2xl font-semibold text-white mb-4">
+                            Send Us a Message
+                        </h3>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            {/* Name */}
+                            <div className="space-y-2">
+                                <label htmlFor="name" className="text-sm font-medium text-gray-200">
+                                    Name
+                                </label>
+                                <input
+                                    type="text"
+                                    id="name"
+                                    name="name"
+                                    required
+                                    className="w-full px-4 py-3 rounded-lg bg-gray-800 text-white focus:ring-2 focus:ring-lime-500 border border-gray-700 focus:border-transparent"
+                                    placeholder="John Doe"
+                                />
+                            </div>
+
+                            {/* Email */}
+                            <div className="space-y-2">
+                                <label htmlFor="email" className="text-sm font-medium text-gray-200">
+                                    Email
+                                </label>
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    required
+                                    className="w-full px-4 py-3 rounded-lg bg-gray-800 text-white focus:ring-2 focus:ring-lime-500 border border-gray-700 focus:border-transparent"
+                                    placeholder="example@email.com"
+                                />
+                            </div>
+
+                            {/* Company */}
+                            <div className="space-y-2">
+                                <label htmlFor="company" className="text-sm font-medium text-gray-200">
+                                    Company
+                                </label>
+                                <input
+                                    type="text"
+                                    id="company"
+                                    name="company"
+                                    className="w-full px-4 py-3 rounded-lg bg-gray-800 text-white focus:ring-2 focus:ring-lime-500 border border-gray-700 focus:border-transparent"
+                                    placeholder="Company Name"
+                                />
+                            </div>
+
+                            {/* Phone Number */}
+                            <div className="space-y-2">
+                                <label htmlFor="phone-number" className="text-sm font-medium text-gray-200">
+                                    Phone
+                                </label>
+                                <input
+                                    type="number"
+                                    id="phone-number"
+                                    name="phone-number"
+                                    className="w-full px-4 py-3 rounded-lg bg-gray-800 text-white focus:ring-2 focus:ring-lime-500 border border-gray-700 focus:border-transparent"
+                                    placeholder="+234 000 000 0000"
+                                />
+                            </div>
+
+                            <div className="md:col-span-2 space-y-2">
+                                <label htmlFor="request-type" className="text-sm font-medium text-gray-200">
+                                    Select Needed
+                                </label>
+                                <select
+                                    id="request-type"
+                                    name="request-type"
+                                    required
+                                    className="w-full px-4 py-3 rounded-lg bg-gray-800 text-white focus:ring-2 focus:ring-lime-500 border border-gray-700 focus:border-transparent"
+                                >
+                                    <option value="Web App Development">Web App Development</option>
+                                    <option value="Enterprise Business Solutions">Enterprise Business Solutions</option>
+                                    <option value="UI/UX Development">UI/UX Development</option>
+                                    <option value="Corporate Branding">Corporate Branding</option>
+                                    <option value="Managed Services">Managed Services</option>
+                                    <option value="Business Analytics">Business Analytics</option>
+                                </select>
+                            </div>
+
+                            {/* Country */}
+                            <div className="space-y-2">
+                                <label htmlFor="country" className="text-sm font-medium text-gray-200">
+                                    Country
+                                </label>
+                                <input
+                                    type="text"
+                                    id="country"
+                                    name="country"
+                                    className="w-full px-4 py-3 rounded-lg bg-gray-800 text-white focus:ring-2 focus:ring-lime-500 border border-gray-700 focus:border-transparent"
+                                    placeholder="Your Country"
+                                />
+                            </div>
+
+                            {/* Message */}
+                            <div className="md:col-span-2 space-y-">
+                                <label htmlFor="message" className="text-sm font-medium text-gray-200">
+                                    Message
+                                </label>
+                                <textarea
+                                    id="message"
+                                    name="message"
+                                    required
+                                    rows="5"
+                                    className="w-full px-4 py-3 rounded-lg bg-gray-800 text-white focus:ring-2 focus:ring-lime-500 border border-gray-700 focus:border-transparent"
+                                    placeholder="How can we help you?"
+                                />
+                            </div>
+
+                            {/* Submit Button */}
+                            <div className="md:col-span-2 pt-4">
+                                <button
+                                    type="submit"
+                                    className="w-full py-3 px-6 bg-lime-600 hover:bg-lime-700 text-white font-semibold rounded-lg transition-all duration-300 transform hover:scale-[1.02]"
+                                >
+                                    Send Message
+                                </button>
+                            </div>
+                        </div>
+
+                    </form>
                 </div>
             </section>
             <Footer />
