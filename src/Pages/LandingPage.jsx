@@ -170,7 +170,7 @@ const LandingPage = () => {
                 <div className="flex flex-col lg:flex-row gap-20 items-center lg:items-start justify-center px-5 md:px-10 lg:px-20">
                     {/* <img src={PhoneImage} alt="Phone" className="w-full mb-5 max-w-sm lg:max-w-2xl" /> */}
 
-                    <div class="w-[100%] lg:w-[130%]"
+                    <div className="w-[113%] lg:w-[130%]"
                         data-aos="fade-right"
                         data-aos-duration="1000"
                     >
