@@ -57,13 +57,13 @@ const LandingPage = () => {
 
             {/* Hero Section */}
             <div
-                className="lg:h-[90vh] bg-cover overflow-x-hidden bg-bottom bg-no-repeat bg-center lg:px-[10em] lg:py-[7rem] md:bg-none sm:bg-none"
+                className="lg:h-[100vh] bg-cover overflow-x-hidden bg-bottom bg-no-repeat bg-center lg:px-[10em] lg:py-[7rem] md:bg-none sm:bg-none"
                 style={{
                     backgroundImage: `url(${backgroundImage})`, // Default for all screens
                 }}
             >
-                <div className="flex flex-col justify-center lg:bg-transparent sm:bg-lime-50 md:bg-lime-50 sm:w-[100%]  items-center text-center py-4 lg:items-start lg:text-left lg:bg-transparent w-[100%] lg:h-full md:h-[85vh] sm:h-[85vh]">
-                    <h1 className="font-sans sm:text-4xl mb-2 md:text-5xl lg:text-7xl font-bold"
+                <div className="flex flex-col justify-center lg:bg-transparent sm:bg-lime-50 md:bg-lime-50 sm:w-[100%]  items-center text-center py-4 pt-20 lg:items-start lg:text-left lg:bg-transparent w-[100%] lg:h-full md:h-[85vh] sm:h-[85vh]">
+                    <h1 className="font-sans text-black lg:text-white sm:text-4xl mb-2 md:text-5xl lg:text-[70px] font-bold"
                         data-aos="fade-up"
                         data-aos-anchor-placement="bottom-bottom"
                         data-aos-duration="500">
@@ -81,7 +81,7 @@ const LandingPage = () => {
                         </span>
                     </h1>
 
-                    <p className="font-sans sm:text-lg md:text-base lg:text-lg text-[#191919] py-8 sm:px-4 lg:px-0"
+                    <p className="font-sans sm:text-lg md:text-base lg:text-lg text-[#191919] lg:text-white py-8 sm:px-4 lg:px-0"
                         data-aos="fade-up"
                         data-aos-anchor-placement="bottom-bottom"
                         data-aos-duration="1000">
@@ -98,9 +98,7 @@ const LandingPage = () => {
                                 Discover Now
                             </button>
                         </Link>
-                        <button className="font-sans hidden lg:block px-6 py-4 border border-lime-500 text-black rounded-md hover:border-lime-700">
-                            How It Works
-                        </button>
+
                     </div>
                 </div>
             </div>

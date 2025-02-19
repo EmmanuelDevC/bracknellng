@@ -2,7 +2,7 @@ import React from "react";
 import { useForm } from '@formspree/react';
 import Navbar from "../Components/Nav";
 import backgroundImage2 from '../images/bg-pattern-3.png';
-import happyImage from '../images/happy.webp';
+import happyImage from '../images/text.jpg';
 import thankyouImage from '../images/thankyou.png';
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
@@ -107,16 +107,14 @@ const ContactUs = () => {
                             data-aos-anchor-placement="bottom-bottom"
                             data-aos-duration="500"
                         >
-                            Growth strategies to be effective & competitive
+                            Feel free to reach out to us
                         </h1>
                         <p className="text-gray-600 py-3 text-base md:text-lg"
                             data-aos="fade-up"
                             data-aos-anchor-placement="bottom-bottom"
                             data-aos-duration="1000"
                         >
-                            Everything we do and dream up has a solid design impact. We create
-                            human-centered enterprise software that has the polished, snappy
-                            feel of the best consumer apps.
+                            Have questions or need assistance? We're here to help! Reach out to us for inquiries, collaborations, or support. Let's create something amazing together!
                         </p>
                         <button className="py-3 md:py-4 mt-4 px-5 text-sm md:text-lg font-sans rounded-md bg-lime-800 text-white hover:bg-lime-700"
                             data-aos="fade-up"
