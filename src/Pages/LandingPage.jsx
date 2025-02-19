@@ -10,9 +10,8 @@ import fifthImage from '../images/5.webp';
 import MyFont from '../images/file11.svg';
 import MyFont2 from '../images/file22.svg';
 import MyFont3 from '../images/file33.svg';
-import PhoneImage from '../images/phoneImg.webp';
+import PhoneImage from '../images/phoneImg.png';
 import { Link } from "react-router-dom";
-import boxImage from '../images/img-box.png';
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import FlagIcon from '@mui/icons-material/Flag';
 import TrendingUpIcon from '@mui/icons-material/TrendingUp';
@@ -171,15 +170,14 @@ const LandingPage = () => {
                 <div className="flex flex-col lg:flex-row gap-20 items-center lg:items-start justify-center px-5 md:px-10 lg:px-20">
                     {/* <img src={PhoneImage} alt="Phone" className="w-full mb-5 max-w-sm lg:max-w-2xl" /> */}
 
-                    <div class="relative mb-5 w-[100%]"
+                    <div class="w-[100%] lg:w-[130%]"
                         data-aos="fade-right"
                         data-aos-duration="1000"
                     >
-                        <img src={PhoneImage} alt="Background" className="w-full mb-5 max-w- lg:max-w-2xl md:w-[450px]" />
-                        <img src={boxImage} alt="Overlay" className="absolute top-[180px] left-[-40px] w-[450px] md:w-[190px] h-auto" />
+                        <img src={PhoneImage} alt="Background" className="w-fit object-fit h-[200px] lg:h-[310px] mt-20 lg:max-w-4xl md:w-[500px]" />
                     </div>
 
-                    <div className="text-left mt-12">
+                    <div className="text-left mt-[-30px] lg:mt-12">
                         <h1 className="text-3xl md:text-3xl font-sans lg:text-4xl text-lime-900 font-bold mb-6"
                             data-aos="fade-up"
                             data-aos-anchor-placement="bottom-bottom"
