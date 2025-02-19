@@ -2,11 +2,9 @@ import React, { useState } from "react";
 import Navbar from "../Components/Nav";
 import backgroundImage from '../images/business-hero.jpeg';
 import backgroundImage2 from '../images/bg-pattern-3.png';
-import firstImage from '../images/1.webp';
-import secondImage from '../images/2.webp';
-import thirdImage from '../images/3.webp';
-import forthImage from '../images/4.webp';
-import fifthImage from '../images/5.webp';
+import firstImage from '../images/abchealth.png';
+import secondImage from '../images/access.png';
+import thirdImage from '/finceptive.svg';
 import MyFont from '../images/file11.svg';
 import MyFont2 from '../images/file22.svg';
 import MyFont3 from '../images/file33.svg';
@@ -328,9 +326,8 @@ const LandingPage = () => {
 
                         <img src={firstImage} alt="" className="lg:h-10 my-5 md:h-8 sm:h-8" />
                         <img src={secondImage} alt="" className="lg:h-10 my-5 md:h-8 sm:h-8" />
-                        <img src={thirdImage} alt="" className="lg:h-10 my-5 md:h-8 sm:h-8" />
-                        <img src={forthImage} alt="" className="lg:h-10 my-5 md:h-8 sm:h-8" />
-                        <img src={fifthImage} alt="" className="lg:h-10 my-5 md:h-8 sm:h-8" />
+                        <img src={thirdImage} alt="" className="lg:h-[50px] rounded-full my-5 md:h-8 sm:h-8" />
+
 
                     </div>
                 </div>
