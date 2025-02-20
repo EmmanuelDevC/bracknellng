@@ -320,13 +320,13 @@ const LandingPage = () => {
                         data-aos-anchor-placement="bottom-bottom"
                         data-aos-duration="1000"
                     >
-                        Trusted by nearly 5000+ customers & startups
+                        Our Trusted Partners🤝
                     </h2>
                     <div className="flex flex-wrap items-center justify-center mt-20 space-x-20  sm:space-x-10">
 
                         <img src={firstImage} alt="" className="lg:h-10 my-5 md:h-8 sm:h-8" />
                         <img src={secondImage} alt="" className="lg:h-10 my-5 md:h-8 sm:h-8" />
-                        <img src={thirdImage} alt="" className="lg:h-[50px] rounded-full my-5 md:h-8 sm:h-8" />
+                        <img src={thirdImage} alt="" className="h-[50px] rounded-full my-5 md:h-8 sm:h-8" />
 
 
                     </div>
