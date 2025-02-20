@@ -12,11 +12,9 @@ import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 import FreeBreakfastIcon from '@mui/icons-material/FreeBreakfast';
 import ArticleIcon from '@mui/icons-material/Article';
 import BrushIcon from '@mui/icons-material/Brush';
-import firstImage from '../images/1.webp';
-import secondImage from '../images/2.webp';
-import thirdImage from '../images/3.webp';
-import forthImage from '../images/4.webp';
-import fifthImage from '../images/5.webp';
+import firstImage from '../images/abchealth.png';
+import secondImage from '../images/access.png';
+import thirdImage from '/finceptive.svg';
 import Footer from '../Components/Footer';
 
 const About = () => {
