@@ -4,7 +4,10 @@ import backgroundImage from '../images/business-hero.jpeg';
 import backgroundImage2 from '../images/bg-pattern-3.png';
 import firstImage from '../images/abchealth.png';
 import secondImage from '../images/access.png';
+import fourthImage from '../images/law.png';
 import thirdImage from '/finceptive.svg';
+import fifthImage from '../images/grow.png';
+import sixthImage from '/women.svg';
 import MyFont from '../images/file11.svg';
 import MyFont2 from '../images/file22.svg';
 import MyFont3 from '../images/file33.svg';
@@ -324,9 +327,12 @@ const LandingPage = () => {
                     </h2>
                     <div className="flex flex-wrap items-center justify-center mt-20 space-x-20  sm:space-x-10">
 
-                        <img src={firstImage} alt="" className="lg:h-10 my-5 md:h-8 sm:h-8" />
-                        <img src={secondImage} alt="" className="lg:h-10 my-5 md:h-8 sm:h-8" />
-                        <img src={thirdImage} alt="" className="h-[50px] rounded-full my-5 md:h-8 sm:h-8" />
+                        <img src={firstImage} alt="" className="lg:h-[50px] my-5 md:h-8 sm:h-8" />
+                        <img src={secondImage} alt="" className="lg:h-[50px] my-5 md:h-8 sm:h-8" />
+                        <img src={thirdImage} alt="" className="lg:h-[60px] rounded-full my-5 md:h-8 sm:h-8" />
+                        <img src={fifthImage} alt="" className="lg:h-[50px] my-5 md:h-8 sm:h-8" />
+                        <img src={sixthImage} alt="" className="lg:h-[70px] my-5 md:h-8 sm:h-8 " />
+                        <img src={fourthImage} alt="" className="lg:h-[50px] my-5 md:h-8 sm:h-8 bg-gray-500 rounded-md" />
 
 
                     </div>

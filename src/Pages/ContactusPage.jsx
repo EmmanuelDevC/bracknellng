@@ -1,5 +1,4 @@
-import React from "react";
-import { useForm } from '@formspree/react';
+import React, { useState } from "react";
 import Navbar from "../Components/Nav";
 import backgroundImage2 from '../images/bg-pattern-3.png';
 import happyImage from '../images/text.jpg';
@@ -8,57 +7,86 @@ import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import EmailIcon from '@mui/icons-material/Email';
 import PhoneIcon from '@mui/icons-material/Phone';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 import Footer from "../Components/Footer";
 
-
 const ContactUs = () => {
+    const [submitting, setSubmitting] = useState(false);
+    const [submitted, setSubmitted] = useState(false);
+    const [error, setError] = useState('');
 
-    const [state, handleSubmit] = useForm("mwppgvye");
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        setSubmitting(true);
+        setError('');
 
-    if (state.succeeded) {
-        return <div className="h-screen flex flex-col justify-center items-center bg-gray-50 px-4 sm:px-6 lg:px-8">
-            <div className="max-w-md w-full flex flex-col justify-center text-center p-8">
-                <img src={thankyouImage} alt="" className="my-5" />
-                <h3 className="text-2xl font-itim font-bold text-gray-800 mb-4">
-                    Thank you for contacting us
-                </h3>
-                <p className="text-lg text-gray-600 mb-6">
-                    we have recieved your message <br />
-                    We'll reach you out immediatly.
-                </p>
-                <div className="flex justify-center ">
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="w-16 h-16 text-green-500 mb-4"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                        strokeWidth="2"
-                        aria-hidden="true"
-                    >
-                        <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            d="M5 13l4 4L19 7"
-                        />
-                    </svg>
+        const formData = new FormData(e.target);
+        const data = Object.fromEntries(formData);
+
+        try {
+            const response = await fetch('http://localhost:4000/send-email', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(data),
+            });
+
+            if (response.ok) {
+                setSubmitted(true);
+            } else {
+                setError('Failed to send message. Please try again.');
+            }
+        } catch (err) {
+            setError('An error occurred. Please check your connection.');
+        } finally {
+            setSubmitting(false);
+        }
+    };
+
+    if (submitted) {
+        return (
+            <div className="h-screen flex flex-col justify-center items-center bg-gray-50 px-4 sm:px-6 lg:px-8">
+                <div className="max-w-md w-full flex flex-col justify-center text-center p-8">
+                    <img src={thankyouImage} alt="" className="my-5" />
+                    <h3 className="text-2xl font-itim font-bold text-gray-800 mb-4">
+                        Thank you for contacting us
+                    </h3>
+                    <p className="text-lg text-gray-600 mb-6">
+                        We have received your message <br />
+                        We'll reach out to you immediately.
+                    </p>
+                    <div className="flex justify-center ">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            className="w-16 h-16 text-green-500 mb-4"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                            strokeWidth="2"
+                            aria-hidden="true"
+                        >
+                            <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                d="M5 13l4 4L19 7"
+                            />
+                        </svg>
+                    </div>
+                    <div className="flex flex-wrap text-center justify-center my-5 mb-10">
+                        <Link to="/Service" className="my-2 mx-4">
+                            <button className="py-2 px-5 border border-lime-500 rounded-full"> Our Services</button>
+                        </Link>
+                        <Link to="/">
+                            <button className="py-2 px-5 border border-lime-500 rounded-full">Back to home page</button>
+                        </Link>
+                    </div>
+                    <p className="text-sm text-gray-500">
+                        Thank you for reaching out. We're processing your request, and you'll hear from us soon!
+                    </p>
                 </div>
-                <div className="flex flex-wrap text-center justify-center my-5 mb-10">
-                    <Link to="/Service" className="my-2 mx-4">
-                        <button className="py-2 px-5 border border-lime-500 rounded-full"> Our Services</button>
-                    </Link>
-                    <Link to="/">
-                        <button className="py-2 px-5 border border-lime-500 rounded-full">Back to home page</button>
-                    </Link>
-                </div>
-                <p className="text-sm text-gray-500">
-                    Thank you for reaching out. We're processing your request, and you'll hear from us soon!
-                </p>
             </div>
-        </div>
-
+        );
     }
+
     return (
         <>
             <Navbar />
@@ -95,7 +123,6 @@ const ContactUs = () => {
 
             <section>
                 <div className="flex flex-col lg:flex-row items-center lg:items-start gap-8 px-4 md:px-16 lg:px-[140px] lg:my-20 sm:my-20">
-
                     <img
                         src={happyImage}
                         alt="strategyImg"
@@ -124,7 +151,6 @@ const ContactUs = () => {
                             Our Services
                         </button>
                     </div>
-
                 </div>
             </section>
 
@@ -142,9 +168,7 @@ const ContactUs = () => {
                         We'd love to hear from you. Reach out through our contact form or visit us directly. Our team will get back to you within 24 hours.
                     </p>
                 </div>
-                <div className="grid md:grid-cols-2 gap-12 lg:gap-16"
-                >
-
+                <div className="grid md:grid-cols-2 gap-12 lg:gap-16">
                     <div className="space-y-8 bg-white p-6 rounded-2xl shadow-lg">
                         <div className="space-y-4">
                             <h3 className="text-2xl font-semibold text-lime-900 border-b pb-2">
@@ -153,7 +177,7 @@ const ContactUs = () => {
                             <div className="space-y-2 text-gray-700">
                                 <div className="flex items-center gap-2">
                                     <LocationOnIcon className="text-lime-700" />
-                                    <p className="text-lg">Plot 50, Samuel Ekunola Street</p>
+                                    <p className="text-lg">Plot 54A, Harrison Sholaja Street</p>
                                 </div>
                                 <p className="ml-6">Off Ago Palace-Way Okota</p>
                                 <p className="ml-6">Isolo, Lagos State</p>
@@ -190,17 +214,17 @@ const ContactUs = () => {
                                     height="100%"
                                     loading="lazy"
                                     allowFullScreen
-                                    src="https://maps.google.com/maps?width=100%25&amp;height=350&amp;hl=en&amp;q=Plot%2050,%20Samuel%20Ekunola%20Street%20%20Off%20Ago%20Palace-Way%20Okota%20%20Isolo,%20Lagos%20State+(Bracknell%20software%20company)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.082881229997!2d3.3031109747531713!3d6.511193193481195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8ee5cf2a256b%3A0xe3efaef60e1ea045!2s54%20Harrison%20Sholaja%20St%2C%20Ilasamaja%2C%20Lagos%20102214%2C%20Lagos!5e0!3m2!1sen!2sng!4v1740693393385!5m2!1sen!2sng"
                                     className="border-0"
                                 >
                                 </iframe>
+
                             </div>
                         </div>
                     </div>
                     <form
                         onSubmit={handleSubmit}
                         className="bg-[#191919] rounded-2xl shadow-xl p-6 lg:p-8 space-y-6"
-
                     >
                         <h3 className="text-2xl font-semibold text-white mb-4">
                             Send Us a Message
@@ -257,20 +281,20 @@ const ContactUs = () => {
                                 </label>
                                 <input
                                     type="number"
-                                    id="phone-number"
-                                    name="phone-number"
-                                    className="w-full px-4 py-3 rounded-lg bg-gray-800 text-white focus:ring-2 focus:ring-lime-500 border border-gray-700 focus:border-transparent"
+                                    id="phone"
+                                    name="phone"
+                                    className=" w-full px-4 py-3 rounded-lg bg-gray-800 text-white focus:ring-2 focus:ring-lime-500 border border-gray-700 focus:border-transparent"
                                     placeholder="+234 000 000 0000"
                                 />
                             </div>
 
                             <div className="md:col-span-2 space-y-2">
                                 <label htmlFor="request-type" className="text-sm font-medium text-gray-200">
-                                    Select Needed
+                                    Select Service
                                 </label>
                                 <select
-                                    id="request-type"
-                                    name="request-type"
+                                    id="requestType"
+                                    name="requestType"
                                     required
                                     className="w-full px-4 py-3 rounded-lg bg-gray-800 text-white focus:ring-2 focus:ring-lime-500 border border-gray-700 focus:border-transparent"
                                 >
@@ -311,24 +335,27 @@ const ContactUs = () => {
                                     placeholder="How can we help you?"
                                 />
                             </div>
+                            {error && <p className="text-red-500 text-center">{error}</p>}
 
                             {/* Submit Button */}
                             <div className="md:col-span-2 pt-4">
-                                <button
-                                    type="submit"
-                                    className="w-full py-3 px-6 bg-lime-600 hover:bg-lime-700 text-white font-semibold rounded-lg transition-all duration-300 transform hover:scale-[1.02]"
-                                >
-                                    Send Message
-                                </button>
+                                <div className="md:col-span-2 pt-4">
+                                    <button
+                                        type="submit"
+                                        disabled={submitting}
+                                        className="w-full py-3 px-6 bg-lime-600 hover:bg-lime-700 text-white font-semibold rounded-lg transition-all duration-300 transform hover:scale-[1.02]"
+                                    >
+                                        {submitting ? 'Sending...' : 'Send Message'}
+                                    </button>
+                                </div>
                             </div>
                         </div>
-
                     </form>
                 </div>
             </section>
             <Footer />
         </>
-    )
-}
+    );
+};
 
-export default ContactUs
+export default ContactUs;
