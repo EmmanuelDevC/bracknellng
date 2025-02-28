@@ -24,7 +24,7 @@ const ContactUs = () => {
         const data = Object.fromEntries(formData);
 
         try {
-            const response = await fetch('https://bracknellngserver-pink.vercel.app/', {
+            const response = await fetch('https://bracknellngserver-pink.vercel.app/send-email', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(data),
