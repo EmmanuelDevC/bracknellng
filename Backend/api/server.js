@@ -8,8 +8,13 @@ dotenv.config();
 
 const app = express();
 
+app.use(cors({
+    origin: process.env.CLIENT_URL  || '*', 
+    methods: ['GET', 'POST'],
+    allowedHeaders: ['Content-Type']
+}));
+
 app.use(bodyParser.json());
-app.use(cors());
 
 const transporter = nodemailer.createTransport({
     service: 'gmail',
