@@ -2,14 +2,14 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const nodemailer = require('nodemailer');
-const dotenv = require('dotenv')
+const dotenv = require('dotenv');
+
+dotenv.config();
 
 const app = express();
-const PORT = process.env.PORT ;
 
 app.use(bodyParser.json());
 app.use(cors());
-dotenv.config();
 
 const transporter = nodemailer.createTransport({
     service: 'gmail',
@@ -19,12 +19,10 @@ const transporter = nodemailer.createTransport({
     },
 });
 
-
 app.post('/send-email', async (req, res) => {
     try {
         const { name, email, company, phone, country, message, requestType } = req.body;
 
-        // Configure email content
         const mailOptions = {
             from: process.env.EMAIL_FROM,
             to: process.env.EMAIL_TO, 
@@ -44,7 +42,6 @@ app.post('/send-email', async (req, res) => {
             `,
         };
 
-        // Send email
         await transporter.sendMail(mailOptions);
         res.status(200).json({ success: true });
     } catch (error) {
@@ -53,7 +50,4 @@ app.post('/send-email', async (req, res) => {
     }
 });
 
-// Start server
-app.listen(PORT, () => {
-    console.log(`Server running on port ${PORT}`);
-});
+module.exports = app;
