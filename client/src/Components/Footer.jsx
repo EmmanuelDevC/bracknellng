@@ -16,7 +16,7 @@ const Footer = () => {
 
                 {/* Products */}
                 <div>
-                    <h3 className="text-lg font-sans font-semibold mb-3">Products</h3>
+                    <h3 className="text-xl font-sans font-semibold mb-3">Products</h3>
                     <ul className="space-y-2 text-sm">
                         <Link to="/"><li>Home</li></Link>
                         <Link to="/about"><li>About</li></Link>
@@ -27,7 +27,7 @@ const Footer = () => {
 
                 {/* Resources */}
                 <div>
-                    <h3 className="text-lg font-sans font-semibold mb-3">Contact Us</h3>
+                    <h3 className="text-xl font-sans font-semibold mb-3">Contact Us</h3>
                     <ul className="space-y-2 text-sm">
                         <li><b>M:</b>(+234) 701 151 4116</li>
                         <li><b>M:</b>(+234) 803 877 4123</li>
@@ -36,16 +36,7 @@ const Footer = () => {
                     </ul>
                 </div>
 
-                {/* Support */}
-                <div>
-                    <h3 className="text-lg font-sans font-semibold mb-3">Support</h3>
-                    <ul className="space-y-2 text-sm">
-                        <li>Documentation</li>
-                        <li>Help Desk</li>
-                        <li>Video Guides</li>
-                        <li>Security</li>
-                    </ul>
-                </div>
+               
             </div>
 
             {/* Bottom Section */}
