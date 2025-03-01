@@ -327,12 +327,12 @@ const LandingPage = () => {
                     </h2>
                     <div className="flex flex-wrap items-center justify-center mt-20 space-x-20  sm:space-x-10">
 
-                        <img src={firstImage} alt="" className="lg:h-[50px] my-5 md:h-8 sm:h-8" />
-                        <img src={secondImage} alt="" className="lg:h-[50px] my-5 md:h-8 sm:h-8" />
-                        <img src={thirdImage} alt="" className="lg:h-[60px] rounded-full my-5 md:h-8 sm:h-8" />
-                        <img src={fifthImage} alt="" className="lg:h-[50px] my-5 md:h-8 sm:h-8" />
-                        <img src={sixthImage} alt="" className="lg:h-[70px] my-5 md:h-8 sm:h-8 " />
-                        <img src={fourthImage} alt="" className="lg:h-[50px] my-5 md:h-8 sm:h-8 bg-gray-500 rounded-md" />
+                        <Link to="https://abchealth.com/"><img src={firstImage} alt="" className="lg:h-[50px] my-5 md:h-8 sm:h-8" /></Link>
+                        <Link to="https://www.accessbankplc.com/"><img src={secondImage} alt="" className="lg:h-[50px] my-5 md:h-8 sm:h-8" /></Link>
+                        <Link to="https://finceptive.co/"><img src={thirdImage} alt="" className="lg:h-[60px] rounded-full my-5 md:h-8 sm:h-8" /></Link>
+                        <Link to="https://growfinance.tech/"><img src={fifthImage} alt="" className="lg:h-[50px] my-5 md:h-8 sm:h-8" /></Link>
+                        <Link to="https://thewcommunity.com/"><img src={sixthImage} alt="" className="lg:h-[70px] my-5 md:h-8 sm:h-8 " /></Link>
+                        <Link to="https://thelawcrest.com/"><img src={fourthImage} alt="" className="lg:h-[50px] my-5 md:h-8 sm:h-8 bg-gray-500 rounded-md" /></Link>
 
 
                     </div>
