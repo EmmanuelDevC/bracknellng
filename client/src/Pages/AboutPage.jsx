@@ -13,8 +13,12 @@ import FreeBreakfastIcon from '@mui/icons-material/FreeBreakfast';
 import ArticleIcon from '@mui/icons-material/Article';
 import BrushIcon from '@mui/icons-material/Brush';
 import firstImage from '../images/abchealth.png';
+import fifthImage from '../images/grow.png';
+import sixthImage from '/women.svg';
 import secondImage from '../images/access.png';
 import thirdImage from '/finceptive.svg';
+import fourthImage from '../images/law.png';
+
 import Footer from '../Components/Footer';
 
 const About = () => {
@@ -295,9 +299,12 @@ const About = () => {
                         </h2>
                         <div className="flex flex-wrap items-center justify-center mt-20 space-x-20  sm:space-x-10">
 
-                        <img src={firstImage} alt="" className="lg:h-10 my-5 md:h-8 sm:h-8" />
-                        <img src={secondImage} alt="" className="lg:h-10 my-5 md:h-8 sm:h-8" />
-                        <img src={thirdImage} alt="" className="h-[50px] rounded-full my-5 md:h-8 sm:h-8" />
+                            <img src={firstImage} alt="" className="lg:h-[50px] my-5 md:h-8 sm:h-8" />
+                            <img src={secondImage} alt="" className="lg:h-[50px] my-5 md:h-8 sm:h-8" />
+                            <img src={thirdImage} alt="" className="lg:h-[60px] rounded-full my-5 md:h-8 sm:h-8" />
+                            <img src={fifthImage} alt="" className="lg:h-[50px] my-5 md:h-8 sm:h-8" />
+                            <img src={sixthImage} alt="" className="lg:h-[70px] my-5 md:h-8 sm:h-8 " />
+                            <img src={fourthImage} alt="" className="lg:h-[50px] my-5 md:h-8 sm:h-8 bg-gray-500 rounded-md" />
 
                         </div>
                     </div>
