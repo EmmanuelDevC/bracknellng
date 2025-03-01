@@ -29,17 +29,17 @@ const Navbar = () => {
 
                     {/* Menu Items */}
                     <div className={`lg:flex space-x-4 ${isMenuOpen ? 'flex' : 'hidden'} lg:space-x-4`}>
-                        <Link to="/" className="text-white text-sm transition-colors duration-300 ease-in-out px-5 py-2 rounded-full font-semibold font-sans focus:bg-white hover:bg-white hover:text-lime-700">
+                        <Link to="/" className="text-white text-lg transition-colors duration-300 ease-in-out px-5 py-2 rounded-full font-md font-sans focus:bg-white hover:bg-white hover:text-lime-700">
                             Home
                         </Link>
-                        <Link to="/about" className="text-white text-sm transition-colors duration-300 ease-in-out px-5 py-2 rounded-full font-semibold font-sans focus:bg-white hover:bg-white hover:text-lime-700">
+                        <Link to="/about" className="text-white text-lg transition-colors duration-300 ease-in-out px-5 py-2 rounded-full font-md font-sans focus:bg-white hover:bg-white hover:text-lime-700">
                             About Us
                         </Link>
 
-                        <Link to="/Service" className="text-white text-sm transition-colors duration-300 ease-in-out px-5 py-2 rounded-full font-semibold font-sans focus:bg-white hover:bg-white hover:text-lime-700">
+                        <Link to="/Service" className="text-white text-lg transition-colors duration-300 ease-in-out px-5 py-2 rounded-full font-md font-sans focus:bg-white hover:bg-white hover:text-lime-700">
                             Services
                         </Link>
-                        <Link to="/contact" className="text-white text-sm transition-colors duration-300 ease-in-out px-5 py-2 rounded-full font-semibold font-sans focus:bg-white hover:bg-white hover:text-lime-700">
+                        <Link to="/contact" className="text-white text-lg transition-colors duration-300 ease-in-out px-5 py-2 rounded-full font-md font-sans focus:bg-white hover:bg-white hover:text-lime-700">
                             Contact
                         </Link>
                     </div>
