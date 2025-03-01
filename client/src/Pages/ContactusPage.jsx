@@ -143,16 +143,17 @@ const ContactUs = () => {
                         >
                             Have questions or need assistance? We're here to help! Reach out to us for inquiries, collaborations, or support. Let's create something amazing together!
                         </p>
-                        <button className="py-3 md:py-4 mt-4 px-5 text-sm md:text-lg font-sans rounded-md bg-lime-800 text-white hover:bg-lime-700"
+                        <Link to="/Service"> <button className="py-3 md:py-4 mt-4 px-5 text-sm md:text-lg font-sans rounded-md bg-lime-800 text-white hover:bg-lime-700"
                             data-aos="fade-up"
                             data-aos-anchor-placement="bottom-bottom"
                             data-aos-duration="1200"
                         >
                             Our Services
                         </button>
+                        </Link>
                     </div>
                 </div>
-            </section>
+            </section >
 
             <section className="p-4 pt-10 lg:p-20"
                 style={{
