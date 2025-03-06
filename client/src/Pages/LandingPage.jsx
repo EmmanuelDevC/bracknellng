@@ -194,29 +194,6 @@ const LandingPage = () => {
                             We are building business, banking products, and services to support the next generation of entrepreneurs. The world as we know it is no longer the same, and changes now occur in days and months, not years. Get started!
                         </p>
 
-                        <div className="flex gap-8 mt-5"
-                            data-aos="fade-up"
-                            data-aos-anchor-placement="bottom-bottom"
-                            data-aos-duration="1300"
-                        >
-                            <div>
-                                <h1 className="text-5xl md:text-2xl lg:text-5xl text-green-500 font-semibold">120k</h1>
-                                <h2 className="text-sm text-customBlueGray md:text-base lg:text-lg"
-                                    data-aos="fade-up"
-                                    data-aos-anchor-placement="bottom-bottom"
-                                    data-aos-duration="1500"
-                                >Business Consultants</h2>
-                            </div>
-                            <div>
-                                <h1 className="text-5xl md:text-4xl lg:text-5xl text-green-500 font-semibold">370+</h1>
-                                <h2 className="text-sm text-customBlueGray md:text-base lg:text-lg"
-                                    data-aos="fade-up"
-                                    data-aos-anchor-placement="bottom-bottom"
-                                    data-aos-duration="1500"
-                                >Startups in 2024/2025</h2>
-                            </div>
-                        </div>
-
                         <Link to="/Contact">
                             <button className="mt-8 px-6 py-3 bg-lime-600 text-white rounded-lg hover:bg-lime-800"
                                 data-aos="fade-up"
