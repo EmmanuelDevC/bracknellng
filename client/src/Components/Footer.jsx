@@ -5,9 +5,9 @@ import { Link } from "react-router-dom";
 const Footer = () => {
     return (
         <footer className="bg-gradient-to-b from-black to-black text-white py-12 px-5">
-            <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 justify-items-center">
+            <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 lg:justify-items-center">
                 {/* Logo and Description */}
-                <div className="space-y-4 text-center md:text-left">
+                <div className="space-y-4 text-left">
                     <img src={Logo} alt="Bracknell Logo" className="h-12 mx-auto md:mx-0" />
                     <p className="mt-4 font-sans text-lg leading-7 text-gray-300 max-w-xs">
                         Creative-powered to fuel your growth goals. We build world-class digital products, software, and branding.
