@@ -15,7 +15,7 @@ const Footer = () => {
                 </div>
 
                 {/* Products */}
-                <div className="text-center md:text-left">
+                <div className="text-left">
                     <h3 className="text-2xl font-sans font-bold mb-4">Products</h3>
                     <ul className="space-y-3 text-lg">
                         <Link to="/" className="hover:text-gray-300 transition"><li>Home</li></Link>
@@ -26,7 +26,7 @@ const Footer = () => {
                 </div>
 
                 {/* Contact */}
-                <div className="text-center md:text-left">
+                <div className="text-left">
                     <h3 className="text-2xl font-sans font-bold mb-4">Contact Us</h3>
                     <ul className="space-y-3 text-lg text-gray-300">
                         <li><span className="font-semibold">M:</span> (+234) 701 151 4116</li>
