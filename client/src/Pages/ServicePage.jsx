@@ -274,11 +274,11 @@ const Service = () => {
 
             <section className="py-20 bg-white">
                 <div className="text-center">
-                    <div className="text-center mb-16">
-                        <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+                     <div className="text-center mb-16">
+                        <h2 className="text-4xl md:text-5xl sm:text-3xl font-bold text-gray-900 mb-6">
                             Trusted by <span className="text-lime-700">Industry Leaders</span>
                         </h2>
-                        <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                        <p className="text-xl sm:text-md px-1 text-gray-600 max-w-3xl mx-auto">
                             We're proud to partner with forward-thinking organizations across various sectors
                         </p>
                     </div>

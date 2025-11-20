@@ -124,14 +124,18 @@ const LandingPage = () => {
                 }}
             >
                 <div className="flex flex-col justify-center lg:bg-transparent sm:bg-lime-50 md:bg-lime-50 sm:w-[100%]  items-center text-center py-4 pt-20 lg:items-start lg:text-left lg:bg-transparent w-[100%] lg:h-full md:h-[85vh] sm:h-[85vh]">
-                    <div className="inline-flex items-center px-6 py-3 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 mb-8 shadow-lg"
+
+                    <div className="absolute top-0 left-0 w-72 h-72 bg-indigo-500/50 rounded-full blur-3xl animate-pulse"></div>
+                    <div className="absolute bottom-0 right-0 w-96 h-96 bg-indigo-500/5 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s' }}></div>
+
+                    <div className="inline-flex hidden lg:block items-center px-6 py-3 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 mb-8 shadow-lg"
                         data-aos="fade-down"
                         data-aos-duration="800">
                         <span className="w-2 h-2 bg-lime-400 rounded-full mr-3 animate-ping"></span>
                         <span className="text-white font-semibold">Leading Digital Transformation Partner</span>
                     </div>
 
-                    <h1 className="font-sans text-black lg:text-white sm:text-4xl mb-2 md:text-5xl lg:text-[70px] font-bold"
+                    <h1 className="font-sans text-black lg:text-white sm:text-5xl mb-2 md:text-5xl lg:text-[70px] font-bold"
                         data-aos="fade-up"
                         data-aos-anchor-placement="bottom-bottom"
                         data-aos-duration="500">
@@ -153,6 +157,7 @@ const LandingPage = () => {
                         data-aos="fade-up"
                         data-aos-anchor-placement="bottom-bottom"
                         data-aos-duration="1000">
+
                         Small business, big opportunity? We help our clients exploit technology to <br className="hidden lg:block" />
                         strategically reshape their business around the digital economy.
                     </p>
@@ -161,6 +166,7 @@ const LandingPage = () => {
                         data-aos="fade-up"
                         data-aos-anchor-placement="bottom-bottom"
                         data-aos-duration="1200">
+
                         <Link to="/Service">
                             <button className="font-sans px-6 py-4 bg-lime-600 text-white rounded-md hover:bg-lime-700">
                                 Discover Now
@@ -170,6 +176,7 @@ const LandingPage = () => {
                     </div>
                 </div>
             </div>
+
 
             <section className="py-20 px-5 md:px-10 lg:px-20 text-center">
                 <h1 className="text-3xl font-sans md:text-4xl lg:text-5xl text-lime-900 font-bold mb-10">
@@ -282,14 +289,14 @@ const LandingPage = () => {
                             </div>
 
                             <div className="flex flex-col sm:flex-row gap-4 pt-6">
-                                <Link to="/Contact">
+                                <Link to="/About">
                                     <button className="px-8 py-4 bg-gradient-to-r from-lime-700 to-lime-600 text-white font-semibold rounded-xl shadow-2xl hover:shadow-lime-200/50 transition-all duration-300 hover:scale-105">
-                                        Get In Touch
+                                        View Our Work
                                     </button>
                                 </Link>
-                                <Link to="/About">
-                                    <button className="px-8 py-4 border-2 border-lime-200 text-lime-800 font-semibold rounded-xl hover:bg-lime-50 transition-all duration-300 hover:scale-105">
-                                        View Our Work
+                                <Link to="/Contact">
+                                    <button className="px-8 hidden lg:block py-4 border-2 border-lime-200 text-lime-800 font-semibold rounded-xl hover:bg-lime-50 transition-all duration-300 hover:scale-105">
+                                        Get in Touch
                                     </button>
                                 </Link>
 
@@ -362,15 +369,15 @@ const LandingPage = () => {
                         </div>
                     </div>
                 </div>
-            </section>           
+            </section>
 
             <section className="py-20 bg-white">
                 <div className="text-center">
                     <div className="text-center mb-16">
-                        <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+                        <h2 className="text-4xl md:text-5xl sm:text-3xl font-bold text-gray-900 mb-6">
                             Trusted by <span className="text-lime-700">Industry Leaders</span>
                         </h2>
-                        <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                        <p className="text-xl sm:text-md px-1 text-gray-600 max-w-3xl mx-auto">
                             We're proud to partner with forward-thinking organizations across various sectors
                         </p>
                     </div>
