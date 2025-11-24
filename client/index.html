@@ -3,6 +3,15 @@
 
 <head>
 
+  <!-- Google tag (gtag.js) — Added correctly as recommended -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VVB087HB5C"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-VVB087HB5C');
+  </script>
+
   <meta charset="UTF-8" />
   <link rel="icon" type="image" href="./src/images/logo-header.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -53,21 +62,13 @@
         "contactType": "customer service"
       }
     }
-    </script>
+  </script>
+
 </head>
 
 <body>
   <div id="root"></div>
   <script type="module" src="/src/main.jsx"></script>
-
-  <!-- Performance Monitoring (Example: Google Analytics) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'G-XXXXXXX');
-  </script>
 </body>
 
 </html>
